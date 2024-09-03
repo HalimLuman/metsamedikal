@@ -18,7 +18,7 @@ const useAddToCart = () => {
       setIsLoading(false);
 
       // Navigate to the /cart page
-      router.push('/cart');
+      router.push('/products/cart');
     }, 1000); // Simulating a network request
   };
 
