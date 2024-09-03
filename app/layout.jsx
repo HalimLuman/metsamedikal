@@ -1,8 +1,10 @@
+// app/layout.js
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
+import { CartProvider } from '@/context/CartContext'; // Import the CartProvider
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -23,9 +25,11 @@ const RootLayout = ({ children }) => {
           fontSans.variable
         )}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider> {/* Wrap with CartProvider */}
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

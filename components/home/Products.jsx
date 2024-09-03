@@ -1,42 +1,80 @@
+'use client'
+import React from "react";
 import { products } from "@/constants";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import { MdArrowRightAlt } from "react-icons/md";
 import { Button } from "../ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import { kose, saglikci1 } from "@/public";
+import Autoplay from "embla-carousel-autoplay";
 
 const Products = () => {
   return (
-    <div className="w-full">
-      <div className="container flex flex-col">
-        <div className="w-full flex justify-between py-10">
-          <h1>New Products</h1>
-          <Link
-            href="/products"
-            className="flex items-center gap-2 text-primary-blue hover:text-blue-700"
-          >
-            <span>View All</span>
-            <MdArrowRightAlt />
-          </Link>
+    <section className="w-full py-12">
+      <div className="mx-auto px-4 flex flex-col">
+        <div className="text-left ml-14 mb-10 w-[70%] 2xl:self-center">
+          <h1 className="font-bold text-4xl text-gray-800 mb-4">Featured Products</h1>
         </div>
-        <div className="w-full flex justify-between">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="shadow rounded-lg flex flex-col items-center justify-between w-[400px]"
+        {/* Main Flex Container */}
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center">
+          {/* First Image Positioned at Bottom-Left of the Carousel for Large Screens */}
+          <div className="relative 2xl:top-[180px] 2xl:left-[215px] top-[190px] left-[205px] hidden 2xl:block">
+            <Image src={kose} width={300} height={100} alt="solkose" />
+          </div>
+
+          {/* Carousel */}
+          <div className="relative w-[90%] 2xl:w-[60%] bg-[#f6f6f6] p-6 py-0 pb-12 rounded-xl">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 4000,
+                }),
+              ]}
+              className="w-full"
             >
-              <Image src={product.img} width={150} style={{ height: 'auto', width: '150px' }} alt="product" />
-              <hr />
-              <div className="p-2">
-                <h2 className="w-full text-left">{product.name}</h2>
-                <span className="w-full text-left">{product.price}MKD</span>
-              </div>
-              <Button className="text-sm bg-primary-blue hover:bg-blue-700 w-full text-center rounded-t-none">Add to Cart</Button>
-            </div>
-          ))}
+              <CarouselContent className="flex">
+                {products.map((product, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="basis-full sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 flex flex-col items-center p-4 rounded-lg transition-shadow duration-300"
+                  >
+                    <div className="flex items-center justify-center h-[200px] w-full mb-4 overflow-hidden rounded-md border border-gray-200">
+                      <Image
+                        src={product.img}
+                        alt={`Product ${index + 1}`}
+                        width={250}
+                        height={200}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                    <div className="self-start">
+                      <h2 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h2>
+                      <Button className="mt-4 bg-primary-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-200">
+                        View Details
+                        <MdArrowRightAlt className="inline ml-2" />
+                      </Button>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
+
+          {/* Last Image Positioned Next to Carousel for Large Screens */}
+          <div className="mt-4 lg:mt-0 hidden 2xl:block relative bottom-20">
+            <Image src={saglikci1} width={400} height={200} alt="saglikci" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

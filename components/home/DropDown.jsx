@@ -19,10 +19,10 @@ const DropDown = () => {
       <DropdownMenuContent className="w-56">
         {dropdownMenu.map((item,index) => (
           <DropDownSub
-            category={item.index+1}
+            category={item.category}
             link={item.link}
             subCategory={item.subcategory}
-            key={item.category}
+            key={index+1}
           />
         ))}
       </DropdownMenuContent>

@@ -13,59 +13,59 @@ const Navbar = () => {
   return (
     <div className="w-full flex flex-col drop-shadow bg-white">
       {/* Top Bar */}
-      <div className="bg-primary-blue w-full">
-        <div className="container flex text-white flex-col md:flex-row items-center justify-end md:justify-between py-1 space-y-2 md:space-y-0">
-          {/* Contact Information - Hidden on smaller screens */}
-          <div className="hidden lg:flex gap-3">
-            <div className="flex items-center gap-2">
-              <CiPhone />
-              <h2 className="text-sm">0352 222 07 30</h2>
-            </div>
-            <div className="w-[1px] bg-white/30" />
-            <div className="flex items-center gap-2">
-              <CiMail />
-              <h2 className="text-sm">metsasaglik@gmail.com</h2>
-            </div>
-            <div className="w-[1px] bg-white/30" />
-            <div className="flex items-center gap-2">
-              <CiLocationOn />
-              <h2 className="text-sm">Atatürk Bulvarı Hastane Caddesi NO:71/A Kocasinan/Kayseri</h2>
-            </div>
-          </div>
-          
-          {/* Social Media and Language Selector */}
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <CiInstagram className="text-3xl p-1 rounded-full hover:bg-white/80 hover:text-[#5985d0] transition duration-300" />
-            </Link>
-            <Link href="/">
-              <CiFacebook className="text-3xl p-1 rounded-full hover:bg-white/80 hover:text-[#5985d0] transition duration-300" />
-            </Link>
-            <div className="w-[1px] bg-white/30 hidden md:block" />
-            <div className="flex items-center gap-1">
-              <DropdownMenu>
-                <DropdownMenuTrigger>
-                  <div className="flex items-center gap-1">
-                    <MdKeyboardArrowDown />
-                    <span>MK</span>
-                  </div>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="p-0 m-0">
-                  <DropdownMenuItem className="cursor-pointer hover:text-primary-blue py-1 px-3">
-                    MK
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer hover:text-primary-blue py-1 px-3">
-                    AL
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer hover:text-primary-blue py-1 px-3">
-                    EN
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-          </div>
-        </div>
+      <div className="bg-primary-blue w-full py-3">
+  <div className="container mx-auto flex items-center justify-between text-white md:space-y-0 px-6">
+    {/* Contact Information - Visible only on larger screens */}
+    <div className="items-center flex space-x-8">
+      <div className="flex items-center space-x-2">
+        <CiPhone className="text-xl" />
+        <span className="text-sm font-light">0352 222 07 30</span>
       </div>
+      <div className="w-[1px] h-6 bg-white/40" />
+      <div className="hidden lg:flex items-center space-x-2">
+        <CiMail className="text-xl" />
+        <span className="text-sm font-light">metsasaglik@gmail.com</span>
+      </div>
+      <div className="hidden lg:flex w-[1px] h-6 bg-white/40" />
+      <div className="hidden lg:flex items-center space-x-2">
+        <CiLocationOn className="text-xl" />
+        <span className="text-sm font-light">Atatürk Bulvarı Hastane Caddesi NO:71/A Kocasinan/Kayseri</span>
+      </div>
+    </div>
+
+    {/* Social Media and Language Selector */}
+    <div className="flex items-center space-x-4">
+      {/* Social Media Links */}
+      <Link href="/" className="text-white hover:text-gray-200 transition duration-200">
+        <CiInstagram className="text-2xl" />
+      </Link>
+      <Link href="/" className="text-white hover:text-gray-200 transition duration-200">
+        <CiFacebook className="text-2xl" />
+      </Link>
+
+      {/* Language Selector */}
+      <div className="relative">
+        <DropdownMenu>
+          <DropdownMenuTrigger className="flex items-center gap-1 cursor-pointer hover:text-gray-200 transition duration-200">
+            <span className="text-sm font-light">MK</span>
+            <MdKeyboardArrowDown className="text-lg" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className=" bg-white text-primary-blue rounded-md shadow-md">
+            {["MK", "AL", "EN"].map((lang) => (
+              <DropdownMenuItem
+                key={lang}
+                className="cursor-pointer hover:bg-primary-blue rounded-md hover:text-white py-2 px-4 transition duration-200"
+              >
+                {lang}
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       {/* Main Navbar */}
       <nav className="container flex justify-between items-center h-[80px]">

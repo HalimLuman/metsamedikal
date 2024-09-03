@@ -4,13 +4,19 @@ import banner2 from './banner/banner2.png'
 import banner3 from './banner/banner3.png'
 import saglikci1 from './banner/saglikci.png'
 import insan1 from './banner/slayt2.png'
+import insan2 from './banner/slayt.png'
 import doctor1 from './banner/doctor1.png'
 import doctor2 from './banner/doctor2.png'
+import category1 from './banner/category1.png'
+import category2 from './banner/category2.png'
+import category3 from './banner/category3.png'
+import arrow from './banner/arrow.png'
 
 import logo from './metsa-logo.png'
 import logo2 from './metsa-logo2.png'
 import footerLeft from './footer/footerleft.png'
 import footerRight from './footer/footerright.png'
+import kose from './footer/kosesol1.png'
 
 import accuChek from './partners/accuchek.jpg'
 import ankamedikal from './partners/ankamedikal.jpg'
@@ -39,6 +45,21 @@ import maske1 from './products/maske.jpg'
 import maske2 from './products/maske2.jpg'
 import philipsProduct from './products/philipsProduct.png'
 
+import digerCihaz from './product-groups/cihazVeUrunler.jpeg'
+import fizikTedavi from './product-groups/fizikTedavi.png'
+import hastaBezi from './product-groups/hastabezi.png'
+import hastaneEkipmanlari from './product-groups/hastaneEkipmanlari.png'
+import havaliYatak from './product-groups/havaliYatak.png'
+import lenfOdem from './product-groups/lenf.jpeg'
+import liposuctionKorse from './product-groups/liposuction.png'
+import ortopedikUrun from './product-groups/ortopedikUrun.png'
+import solunumCihaz from './product-groups/solunumCihazlari.png'
+import tansiyonAleti from './product-groups/tansiyon.png'
+import tekerlekliSandalye from './product-groups/tekerlekliSandalye.png'
+import varisCorap from './product-groups/varisCorap.jpeg'
+import yaraBakim from './product-groups/yarabakim.png'
+import yurumeYardim from './product-groups/yurumeyeYardimci.png'
+import klinik from './product-groups/klinik.png'
 
 
 export {
@@ -52,8 +73,14 @@ export {
     footerRight,
     saglikci1,
     insan1,
+    insan2,
     doctor1,
     doctor2,
+    kose,
+    category1,
+    category2,
+    category3,
+    arrow,
 
     accuChek,
     ankamedikal,
@@ -80,5 +107,21 @@ export {
 
     maske1,
     maske2,
-    philipsProduct
+    philipsProduct,
+
+    digerCihaz,
+    fizikTedavi,
+    hastaBezi,
+    hastaneEkipmanlari,
+    havaliYatak,
+    lenfOdem,
+    liposuctionKorse,
+    ortopedikUrun,
+    solunumCihaz,
+    tansiyonAleti,
+    tekerlekliSandalye,
+    varisCorap,
+    yaraBakim,
+    yurumeYardim,
+    klinik
 }

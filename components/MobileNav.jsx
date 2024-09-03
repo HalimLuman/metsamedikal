@@ -1,12 +1,19 @@
-'use client'
-import Image from "next/image";
-import { useState } from "react";
-import { IoClose } from "react-icons/io5";
-import { CiMenuBurger } from "react-icons/ci";
+"use client";
+
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { dropdownMenu } from "@/constants";
+import { logo2 } from "@/public";
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { CiMenuBurger } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { nextImage } from "@/public";
+import { useState } from "react";
 
 const MobileNav = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -20,68 +27,69 @@ const MobileNav = () => {
   };
 
   return (
-    <div>
-      <div onClick={() => setOpenNav(!openNav)}>
-        <CiMenuBurger className="text-2xl" />
-      </div>
-      <div
-        className={`fixed inset-0 min-h-screen bg-black bg-opacity-50 transition-opacity duration-300 ${
-          openNav ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
-        onClick={() => setOpenNav(false)}
-      />
-      <div
-        className={`fixed top-0 left-0 min-h-screen w-3/4 bg-white shadow-lg transform transition-transform duration-300 ${
-          openNav ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <div className="flex justify-between w-full p-5">
-          <Image src={nextImage} width={100} height={100} alt="logo" />
-          <IoClose className="text-3xl" onClick={() => setOpenNav(false)} />
-        </div>
-        <div className="flex flex-col w-full">
-          {dropdownMenu.map((item, index) => (
-            <div key={index}>
-              <div className="w-full flex items-center justify-between px-5">
-                <Link
-                  href={item.link}
-                  className={`hover:text-primary-blue ${
-                    openCategories[index]
-                      ? "text-primary-blue font-semibold"
-                      : ""
-                  }`}
+    <section className="w-full max-w-[264px]">
+      <Sheet>
+        <SheetTrigger>
+          <CiMenuBurger />
+        </SheetTrigger>
+        <SheetContent
+          side="left"
+          className="border-none bg-white w-full min-h-[100vh] overflow-y-auto"
+        >
+          <Link
+            href="/"
+            className="cursor-pointer flex items-center gap-1"
+          >
+            <Image src={logo2} width={130} height={120} alt="Metsa logo" />
+          </Link>
+          <div>
+            <nav className="flex flex-col gap-3 pt-10">
+              {dropdownMenu.map((item, index) => (
+                <div
+                  key={item.link}
+                  className="flex flex-col w-full border-b pb-2"
                 >
-                  {item.category}
-                </Link>
-                {item.subcategory && item.subcategory.length > 0 && (
-                  <MdKeyboardArrowDown
-                    className={`text-lg ${
-                      openCategories[index] ? "rotate-180" : ""
-                    }`}
-                    onClick={() => toggleCategory(index)}
-                  />
-                )}
-              </div>
-              {openCategories[index] && (
-                <div className="pl-7 mt-2">
-                  {item.subcategory.map((sub, subIndex) => (
-                    <div className="w-full py-1" key={subIndex}>
-                      <Link
-                        href={sub.link}
-                        className="hover:text-primary-blue"
+                  <div className="flex justify-between items-center">
+                    <Link href={`/products/${item.link}`}>
+                      <p className="text-black">{item.category}</p>
+                    </Link>
+                    {item.subcategory && item.subcategory.length > 0 && (
+                      <div
+                        className="flex items-center cursor-pointer"
+                        onClick={() => toggleCategory(index)}
+                        role="button"
+                        aria-expanded={openCategories[index] ? "true" : "false"}
+                        aria-controls={`subcategory-${index}`}
                       >
-                        {sub.category}
-                      </Link>
+                        <MdKeyboardArrowDown
+                          className={`text-lg text-black transition-transform ${
+                            openCategories[index] ? "rotate-180" : ""
+                          }`}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  {openCategories[index] && (
+                    <div id={`subcategory-${index}`} className="pl-5 mt-2">
+                      {item.subcategory.map((sub, subIndex) => (
+                        <div className="w-full py-1" key={subIndex}>
+                          <Link
+                            href={`/products/${item.link}/${sub.link}`}
+                            className="text-gray-500 hover:text-primary-blue"
+                          >
+                          {'• '}{sub.category}
+                          </Link>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  )}
                 </div>
-              )}
-              <hr className="my-3" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+              ))}
+            </nav>
+          </div>
+        </SheetContent>
+      </Sheet>
+    </section>
   );
 };
 

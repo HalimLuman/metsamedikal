@@ -7,20 +7,19 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
 } from "../ui/dropdown-menu";
-import { Mail, MessageSquare, PlusCircle, UserPlus } from "lucide-react";
 import Link from "next/link";
 
 const DropDownSub = ({ category, link, subCategory }) => {
   return (
     <DropdownMenuSub>
-      <Link href={link}>
+      <Link href={`/products/${link}`}>
         <DropdownMenuSubTrigger>
         <span className="w-full cursor-pointer">{category}</span></DropdownMenuSubTrigger>
       </Link>
       <DropdownMenuPortal>
         <DropdownMenuSubContent>
-          {subCategory.map((item) => (
-            <Link href={item.link} key={item.category}>
+          {subCategory.map((item,index) => (
+            <Link href={`/products/${link}/${item.link}`} key={index+ 2}>
               <DropdownMenuItem className="py-1">
                 <span className="w-full cursor-pointer">
                   {item.category}

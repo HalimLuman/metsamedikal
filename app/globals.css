@@ -75,4 +75,9 @@
   .social-link{
     @apply text-2xl hover:text-primary-blue
   }
+  .input-contact{
+    @apply h-[45px] block w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm
+  }
+  /* Ensure other elements have lower z-index */
+
 }
