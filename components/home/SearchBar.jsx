@@ -1,14 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { CiSearch } from 'react-icons/ci';
 
 const SearchBar = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex justify-end">
       <form>
         <div className="flex items-center p-2 pl-4 border rounded-full">
           <input
             type="text"
-            placeholder="Search for products..."
+            placeholder={t('search')}
             className="outline-none flex-grow text-gray-600"
           />
           <button

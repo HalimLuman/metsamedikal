@@ -1,0 +1,311 @@
+{
+  "sdb": {
+    "osa": {
+      "title": "Apnea Obstruktive e Gjumit - OSA",
+      "p1": "OSA është një çrregullim i zakonshëm dhe shpesh i padjegur i gjumit. Apnea Obstruktive e Gjumit është një gjendje që kërcënon jetën dhe ndodh kur frymëmarrja ndalon dhe ajri nuk arrin në mushkëri për shkak të bllokimeve të përsëritura në rrugën e frymëmarrjes gjatë gjumit. Ky bllokim zakonisht shkaktohet nga rrënja e gjuhës që bllokon rrugën e frymëmarrjes, madhësia e indeve në rrugën e frymëmarrjes dhe muskujt që mbajnë rrugën e frymëmarrjes të hapur duke u relaksuar gjatë gjumit.",
+      "p2": "Apnea është bllokimi që zgjat më shumë se 10 sekonda, dhe hipopnea është bllokimi i rrugës së frymëmarrjes që zgjat më shumë se 10 sekonda, duke shkaktuar frymëmarrje të pamjaftueshme. Për shkak të ndërprerjeve të shpeshta të gjumit nga apneas dhe hipopneas, pacientët me OSA janë të privuar nga një gjumë i thellë dhe të qetë. Ndërprerjet respiratore mund të ndodhin 30 herë ose më shumë në orë. Shumica e pacientëve nuk janë të vetëdijshëm për ndërprerjet në frymëmarrjen e tyre gjatë gjumit. Për këtë arsye, njerëzit e parë që e vërejnë sëmundjen janë bashkëshortët që flenë në të njëjtën shtrat. Duke qenë se pacientët me Apnea e Gjumit nuk flenë normalisht, ata zakonisht nuk zgjedhin të rinovuar. Mos marrja e mjaftueshme e gjumit çon në lodhje gjatë ditës, gjumë të tepërt, përkeqësim të aktiviteteve të përditshme dhe humbje të vëmendjes.",
+      "p3": "Nivelet e ulëta të oksigjenit në gjak për shkak të marrjes së pamjaftueshme të ajrit dhe rregullimeve në përpjekjet e frymëmarrjes gjatë gjumit shkaktojnë rritjen e çrregullimeve të sistemit kardiovaskular. Si rezultat, Apnea e Gjumit është një çrregullim i rëndësishëm që duhet t'i kushtohet vëmendje dhe të hetohet për të rritur cilësinë e jetës. Estimohet se ka më shumë se 2 milion pacientë me OSA në vendin tonë.",
+      "p4": "Trajtimi me pajisjet PAP pranohet nga pacientët në një përqindje shumë të madhe të rasteve, me kusht që pacienti të marrë informacion të mjaftueshëm për sëmundjen e tij/saj, testi i gjumit (PSG, PG) të kryhet në një ambient të rehatshëm, modeli i duhur i pajisjes të përcaktohet me pajisjen e titrimit, të përdoret një pajisje me karakteristika komode dhe të gjendet maska që pacienti ndjen më shumë komoditet.",
+      "p5": "Nëse bëni zhurmë rregullisht dhe mendoni se keni një ose më shumë nga simptomat e mëposhtme, mund të keni nevojë të bëni një test të gjumit (PSG, PG) sa më shpejt që të konsultoheni me mjekun tuaj.",
+      "span1": "Simptomat e rëndësishme:",
+      "li1": "Gjumë të tepërt gjatë ditës",
+      "li2": "Zhurmë e lartë dhe intermittente gjatë gjumit",
+      "li3": "Vështirësi në frymëmarrje dhe ndjesi suffokimi gjatë gjumit",
+      "span2": "Simptoma të tjera të zakonshme:",
+      "li4": "Dhimbje koke dhe lodhje në mëngjes",
+      "li5": "Ngriheni shpesh gjatë natës për të shkuar në tualet",
+      "span3": "Çfarë ndodh me një pacient me Apnea të Gjumit nëse nuk trajtohet siç duhet?",
+      "li6": "Është përcaktuar se rreziqet e mëposhtme rriten ndjeshëm në pacientët që nuk kanë diagnostikuar dhe trajtuar Apnea e Gjumit:",
+      "li7": "Hipertensioni",
+      "li8": "Sëmundjet e zemrës dhe ritmet e papajtueshme të zemrës",
+      "li9": "Ataku në zemër",
+      "li10": "Paraliza",
+      "li11": "Rritje e aksidenteve gjatë vozitjes dhe në punë",
+      "p6": "Trajtimi më efektiv për Apnea e Gjumit është pajisjet CPAP dhe BiPAP (VPAP), të cilat parandalojnë bllokimin duke rritur presionin në rrugën e frymëmarrjes me maska nazale ose gojë-në-në-maskë. Këto pajisje kanë modele të ndryshme në varësi të komoditetit të pacientit dhe karakteristikave të ndjekjes së trajtimit.",
+      "p7": "Pajisjet CPAP me presion të fiksuar, CPAP të cilat kanë modalitetin e komoditetit EPR, CPAP (APAP) që mund të rregullojnë automatikisht presionin sipas nevojave të pacientit, BiPAP (VPAP) që mund të aplikojnë 2 nivele të ndryshme të presionit gjatë frymëmarrjes dhe nxjerrjes, dhe pajisjet autoBiPAP që mund të rregullojnë automatikisht këto nivele presioni veçmas janë produkte trajtimi me parime të ndryshme të funksionimit (algoritme) të përdorura për trajtimin e apnea e gjumit.",
+      "p8": "Operacionet, pajisjet orale dhe stabilizatorët e pozicionit të gjumit për trajtimin e Apnea e Gjumit janë metoda alternative, veçanërisht për pacientët që nuk mund të adaptohen në përdorimin e pajisjes, edhe nëse nuk kanë rezultate aq efektive sa trajtimi me pajisjet PAP."
+    },
+
+    "periodicBreathing": {
+      "title": "Frymëmarrja Periodike - CSR",
+      "p1": "Frymëmarrja Periodike është një çrregullim respirator i karakterizuar nga rritja dhe ulja e vazhdueshme e sasisë së ajrit të inspiruar dhe apneave ose hipopneave qendrore që ndjekin hiperventilimin. Frymëmarrja Periodike ka shumë forma, më e zakonshmja e të cilave është Frymëmarrja Cheyne-Stokes, e cila ndodh veçanërisht në dështimin e zemrës dhe sëmundjet cerebrovaskulare. Apneat ose hipopneat qendrore shihen me rritjen dhe uljen e volumit të frymëmarrjes dhe përpjekjeve të frymëmarrjes.",
+      "span1": "Mundësitë e Trajtimit në Frymëmarrjen Periodike",
+      "p2": "Studimet shkencore kanë treguar se përdorimi i pajisjeve BiPAP me funksione S/T ofron përfitim të pjesshëm në eliminimin e apneave qendrore. Me përdorimin e gjerë të pajisjeve BiPAP autoSV (ASV), të cilat janë prodhuar veçanërisht për trajtimin e Frymëmarrjes Periodike, rezultatet shumë të dobishme janë arritur në eliminimin e shqetësimeve.",
+      "p3": "Siç mund të shihet në grafiket e frymëmarrjes dhe presionit më poshtë, pajisja BiPAP autoSV me Ventilim Adaptiv Servo (ASV) ofron mbështetje presioni në apneat dhe hipopneat qendrore të pacientit dhe parandalon hiperventilimin duke reduktuar mbështetje në frymëmarrje kur sheh një rritje në sasinë e ajrit të inhaluar."
+    },
+    "csa": {
+      "title": "Apnea Qendrore e Gjumit - CSA",
+      "imageAlt": "Grafik që tregon Apnea Qendrore e Gjumit",
+      "p1": "Apnea Qendrore e Gjumit është një model frymëmarrjeje i karakterizuar nga një ndërprerje e papritur e frymëmarrjes pas inhalimit. Ky ndërprerje është për shkak të një problemi në qendrën e kontrollit të frymëmarrjes në tru, jo për shkak të një bllokimi në rrugën e frymëmarrjes. Mungesa e përpjekjes respiratore në gjoks dhe abdomen është një tregues që ndërprerja respiratore nuk është e tipit obstruktiv."
+    },
+    "commSA": {
+      "title": "Apnea Kompleks - CommSA",
+      "imageAlt": "Grafik që tregon Apnea Kompleks",
+      "p1": "Apnea Kompleks është një çrregullim respirator të cilin e origjinon qendra kur presioni i aplikuar gjatë përdorimit të pajisjeve PAP nga disa pacientë me apnea obstruktive shkakton apne qendrore megjithëse është eleminuar OSA.",
+      "p2": "Dinamikat që çojnë në Apnea Kompleks nuk janë ende të njohura plotësisht."
+    }
+  },
+  "diseases-associated-with-apnea": {
+    "heartDisease": {
+      "title": "Sëmundja e Zemrës dhe Apnea e Gjumit",
+      "subtitle1": "Rëndësia e Apnees së Gjumit në Trajtimin dhe Ndjekjen e Sëmundjeve të Zemrës",
+      "p1": "Apnea e Gjumit paraqet një rrezik të rëndësishëm për pacientët tuaj me hipertension, dështim të zemrës, goditje/paralizë dhe fibrilacion atrial.",
+      "p2": "Apnea e Gjumit është e lidhur me rrezik të rritur për hipertension, dështim të zemrës, goditje dhe fibrilacion atrial. Kryerja e testeve të apnees së gjumit te pacientët me këto rreziqe jetike është duke u bërë gjithnjë e më e zakonshme.",
+
+      "hypertensionTitle": "Hipertensioni",
+      "hypertension": {
+        "p1": "Apnea e Gjumit është ngushtë e lidhur me një rrezik më të lartë për hipertension, edhe pasi të kontrollohen të gjitha parametrat e njohur.",
+        "p2": "Apnea e Gjumit shkakton hipertension në një mënyrë në varësi të dozës.",
+        "p3": "83% e pacientëve me hipertension që nuk përgjigjen ndaj trajtimit kanë apnea të rëndë të gjumit.",
+        "p4": "JNC7 konfirmon se apnea e gjumit është një faktor i rëndësishëm në shkaktimin e hipertensionit."
+      },
+
+      "heartFailureTitle": "Dështimi i Zemrës",
+      "heartFailure": {
+        "p1": "50-70% e burrave me dështim të zemrës kanë Apnea të Gjumit.",
+        "p2": "Respiracioni i Cheyne-Stokes është i lidhur me dështim të rëndë të zemrës dhe një prognozë të keqe.",
+        "p3": "Apnea obstruktive e gjumit rrit ndjeshëm rrezikun e një pacienti për të zhvilluar dështim të zemrës."
+      },
+
+      "intermediateMechanisms": "Mekanizmat ndërmjetës të listuar më poshtë janë të lidhur me Apneën Obstruktive të Gjumit dhe mund të shkaktojnë Sëmundje Kardiovaskulare.",
+      "mechanismDetails": "Këta mekanizma mund të ndërveprojnë me njëri-tjetrin dhe të shkaktojnë pasoja patofiziologjike.",
+
+      "sleepApneaTitle": "Apnea e Gjumit",
+      "sleepApnea": {
+        "p1": "Hipoksia / Reksionimi, Hyperkapnia, Ndryshimi i Presionit Intrathoracic"
+      },
+
+      "resultsTitle": "Rezultatet",
+      "results": "Aktivizimi Simpatik, Çrregullimi Endotelial, Vasokonstriksioni, Stresi Oksidativ i Enëve të Gjakut, dhe më shumë.",
+
+      "riskTitle": "Rreziku i Rritur",
+      "risks": "Hipertensioni, Dështimi i Zemrës, Çrregullime të Ritmit të Zemrës, Ishemia Kardiake, dhe më shumë.",
+
+      "goldStandardTitle": "“Standardi i Arktë”",
+      "papTreatmentTitle": "Trajtimi i Apnees së Gjumit me Presion Pozitiv të Rrugëve të Frymëmarrjes (PAP)",
+      "papTreatment": "Apnea e gjumit e trajtuar me terapinë e presionit pozitiv përmirëson frymëmarrjen gjatë gjumit dhe ndihmon në përmirësimin e funksioneve kardiovaskulare.",
+
+      "papHypertensionTitle": "Efektet Pozitive të Trajtimit PAP në Hipertension:",
+      "papHypertension": {
+        "p1": "Redukton presionin e gjakut gjatë ditës në pacientët me OSA.",
+        "p2": "Efektivisht redukton presionin e gjakut sistolik në pacientët me hipertension të rezistent.",
+        "p3": "Normalizon presionin e gjakut nocturnal në pacientët OSA që nuk i bien.",
+        "p4": "Redukton nevojën për medikamente për hipertension."
+      },
+
+      "papHeartFailureTitle": "Efektet Pozitive të Terapisë PAP në Dështimin e Zemrës:",
+      "papHeartFailure": {
+        "p1": "Rritja e LVEF%, LVESD dhe ndryshimet në presionin e gjakut sistolik.",
+        "p2": "Reduktimi i incidencës së tahikardisë ventrikulare dhe përmirësimi i cilësisë së jetës.",
+        "p3": "Reduktimi i normës së vdekshmërisë dhe normës së transplantit të zemrës."
+      },
+
+      "otherImprovementsTitle": "Përmirësime të tjera të dukshme në pacientët e trajtuar me një pajisje PAP:",
+      "otherImprovements": {
+        "p1": "Insuficenca mitrale, peptide atriale natriuretike.",
+        "p2": "Somnolencë.",
+        "p3": "Përthithja e oksigjenit."
+      },
+
+      "bulkScanningTitle": "Skanime në Grup",
+      "bulkScanning": "Pyetje të shkurtra mbi marrëdhënien midis Dështimit të Zemrës dhe Hipertensionit mund të bëhen pacientit ose shoqëruesit me një pyetësor të thjeshtë.",
+
+      "diagnosisTitle": "Diagnoza",
+      "diagnosis": "Polisomnografia ose testet e gjumit portative duhet të kryhen për të konfirmuar diagnozën.",
+
+      "treatmentTitle": "Trajtimi",
+      "treatment": "Presioni Pozitiv i Rrugëve të Frymëmarrjes (PAP) është trajtimi i standardit të artë për apneen e gjumit.",
+
+      "followUpTitle": "Ndjekja",
+      "followUp": "Rreziku kardiovaskular duhet të ri-vlerësohet rregullisht dhe polisomnografia e ndjekjes duhet të kryhet periodikisht.",
+
+      "periodicBreathingTitle": "Frymëmarrja Periodike",
+      "periodicBreathing": {
+        "p1": "Frymëmarrja periodike shkakton fluktuacione të papritura në nivelet e oksigjenit arterial.",
+        "p2": "Këto fluktuacione kanë efekte negative në funksionin e zemrës dhe frymëmarrjes.",
+        "p3": "Pacientët me Dështim të Zemrës dhe Apnea Obstruktive e Gjumit shpesh vuajnë nga frymëmarrja periodike.",
+        "p4": "Trajtimi i apnees së gjumit është i rëndësishëm për të përmirësuar shëndetin e përgjithshëm në këta pacientë."
+      }
+    },
+    "chronicPain": {
+      "title": "Dhimbja Kronike dhe Apnea e Gjumit",
+      "relationshipTitle": "Marrëdhënia Ndërmjet Dhimbjes Kronike dhe Apnees së Gjumit",
+      "p1": "Studimet klinike kanë treguar një lidhje ndërmjet sindromës së dhimbjes kronike dhe frymëmarrjes të çrregulluar gjatë gjumit (SDB). Në disa njerëz, rrjedha e ajrit është e reduktuar gjatë gjumit. Kjo mund të shkaktojë ndërprerje në gjumë dhe cilësi të dobët të gjumit. Frymëmarrja e çrregulluar gjatë gjumit mund të shkaktojë gjumë gjatë ditës, dhimbje koke dhe dhimbje dhe shqetësime kronike.",
+
+      "riskTitle": "A jeni në rrezik?",
+      "risk": {
+        "q1": "A bën zhurmë kur flini?",
+        "q2": "A përjetoni ndonjë ndërprerje në frymëmarrje gjatë gjumit?",
+        "q3": "A keni vështirësi për të rënë në gjumë?",
+        "q4": "A zgjoheni gjatë natës dhe pastaj keni vështirësi për të rënë në gjumë?",
+        "q5": "A ndiheni të nevojshëm për të fjetur gjatë gjithë ditës?"
+      },
+
+      "recommendation": "Nëse përgjigjeni po për dy ose më shumë nga pyetjet e mësipërme, rekomandohet që të konsultoheni me një specialist. Mjeku juaj mund të vendosë të vlerësojë frymëmarrjen tuaj gjatë gjumit. Një studim i gjumit do të ndihmojë në diagnostikimin e OSA dhe në përcaktimin e trajtimit më të mirë.",
+
+      "benefitsTitle": "Cilat janë përfitimet e trajtimit të SDB?",
+      "benefitsIntro": "Studimet klinike kanë treguar se trajtimi i frymëmarrjes së çrregulluar gjatë gjumit (SDB) mund të sjellë efektet e mëposhtme:",
+      "benefits": {
+        "b1": "Reduktimi i nevojës për gjumë gjatë ditës",
+        "b2": "Rritja e aktivitetit dhe qëndrueshmërisë ditore",
+        "b3": "Reduktimi i dhimbjes kronike, stresit dhe dhimbjeve të migrenës",
+        "b4": "Reduktimi i rrezikut të goditjes në zemër, goditjes dhe sëmundjeve të zemrës",
+        "b5": "Rënia e presionit të gjakut (BP)"
+      }
+    },
+    "menopause": {
+      "title": "Menopauza dhe Apnea e Gjumit",
+      "relationshipTitle": "Marrëdhënia Ndërmjet Menopauzës dhe Apnees së Gjumit",
+      "p1": "Studimet klinike kanë treguar një lidhje ndërmjet apnees obstruktive të gjumit (OSA) dhe grave pas menopauzës. OSA është një çrregullim i zakonshëm në të cilin rruga e sipërme e frymëmarrjes mbyllet përsëri gjatë gjumit. Rruga e frymëmarrjes është e bllokuar, çka redukton rrjedhën e ajrit dhe rrit presionin në zemër dhe trup. Nëse nuk trajtohet, OSA mund të çojë në goditje, diabet tip 2 dhe sëmundje të zemrës.",
+
+      "riskTitle": "A jeni në rrezik?",
+      "risk": {
+        "q1": "A bën zhurmë kur flini?",
+        "q2": "A përjetoni ndonjë ndërprerje në frymëmarrje gjatë gjumit?",
+        "q3": "A keni patur ndonjëherë presion të lartë të gjakut?",
+        "q4": "A zgjoheni gjatë natës dhe pastaj keni vështirësi për të rënë në gjumë?"
+      },
+
+      "recommendation": "Nëse përgjigjeni po për dy ose më shumë nga pyetjet e mësipërme, rekomandohet që të konsultoheni me një specialist. Mjeku juaj mund të vendosë të vlerësojë frymëmarrjen tuaj gjatë gjumit. Një studim i gjumit do të ndihmojë në diagnostikimin e OSA dhe në përcaktimin e trajtimit më të mirë.",
+
+      "benefitsTitle": "Cilat janë përfitimet e trajtimit të SDB?",
+      "benefitsIntro": "Studimet klinike kanë treguar se trajtimi i frymëmarrjes së çrregulluar gjatë gjumit (SDB) mund të sjellë efektet e mëposhtme:",
+      "benefits": {
+        "b1": "Parandalimi ose vonimi i zhvillimit të diabetit tip 2",
+        "b2": "Rritja e aktivitetit dhe qëndrueshmërisë ditore",
+        "b3": "Reduktimi i rrezikut të infarktit në zemër, goditjes dhe sëmundjeve të zemrës",
+        "b4": "Rënia e presionit të gjakut (BP)"
+      }
+    },
+    "paralysis": {
+      "title": "Paraliza dhe Apnea e Gjumit",
+      "relationshipTitle": "Marrëdhënia Ndërmjet Goditjes dhe Apnees së Gjumit",
+      "p1": "Studimet klinike kanë treguar një lidhje ndërmjet goditjes dhe apnees obstruktive të gjumit (OSA). OSA është një çrregullim i zakonshëm në të cilin rruga e sipërme e frymëmarrjes mbyllet përsëri gjatë gjumit. Rruga e frymëmarrjes është e bllokuar, çka shkakton reduktim të rrjedhës së ajrit dhe rritje të presionit në zemër dhe trup. Nëse nuk trajtohet, kjo gjendje mund të çojë në sëmundje të tjera të zemrës si goditja, presion të lartë të gjakut (hipertension), dhe ritme të pazakonta të zemrës.",
+
+      "riskTitle": "A jeni në rrezik?",
+      "risk": {
+        "q1": "A bën zhurmë kur flini?",
+        "q2": "A përjetoni ndonjë ndërprerje në frymëmarrje gjatë gjumit?",
+        "q3": "A keni patur ndonjëherë presion të lartë të gjakut?",
+        "q4": "A ndiheni të nevojshëm për të fjetur gjatë gjithë ditës?"
+      },
+
+      "recommendation": "Nëse përgjigjeni po për dy ose më shumë nga pyetjet e mësipërme, rekomandohet që të konsultoheni me një specialist. Mjeku juaj mund të vendosë të vlerësojë frymëmarrjen tuaj gjatë gjumit. Një studim i gjumit do të ndihmojë në diagnostikimin e OSA dhe në përcaktimin e trajtimit më të mirë.",
+
+      "benefitsTitle": "Cilat janë përfitimet e trajtimit të SDB?",
+      "benefitsIntro": "Studimet klinike kanë treguar se trajtimi i frymëmarrjes së çrregulluar gjatë gjumit (SDB) mund të sjellë efektet e mëposhtme:",
+      "benefits": {
+        "b1": "Rënia e presionit të gjakut (BP)",
+        "b2": "Rritja e aktivitetit dhe qëndrueshmërisë ditore",
+        "b3": "Eliminimi i stresit të tepërt në zemër",
+        "b4": "Reduktimi i rrezikut të infarktit në zemër, goditjes dhe sëmundjeve të zemrës"
+      }
+    },
+    "highBloodPressure": {
+      "title": "Presioni i Lartë i Gjakut dhe Apnea e Gjumit",
+      "relationshipTitle": "Marrëdhënia Ndërmjet Presionit të Lartë të Gjakut dhe Apnees së Gjumit",
+      "p1": "Studimet klinike kanë treguar një lidhje ndërmjet presionit të lartë të gjakut (BP) dhe apnees obstruktive të gjumit (OSA). OSA është një çrregullim i zakonshëm në të cilin rruga e sipërme e frymëmarrjes mbyllet përsëri gjatë gjumit. Mbyllja e rrugës së frymëmarrjes shkakton reduktim të rrjedhës së ajrit dhe rritje të presionit në zemër, që rrit presionin e gjakut (BP). Nëse nuk trajtohet, kjo mund të shkaktojë stres të tepërt në zemër, duke rritur rrezikun për infarkt dhe goditje.",
+
+      "riskTitle": "A jeni në rrezik?",
+      "risk": {
+        "q1": "A bën zhurmë kur flini?",
+        "q2": "A përjetoni ndonjë ndërprerje në frymëmarrje gjatë gjumit?",
+        "q3": "A keni patur ndonjëherë presion të lartë të gjakut?",
+        "q4": "A ndiheni të nevojshëm për të fjetur gjatë gjithë ditës?"
+      },
+
+      "recommendation": "Nëse përgjigjeni po për dy ose më shumë nga pyetjet e mësipërme, rekomandohet që të konsultoheni me një specialist. Mjeku juaj mund të vendosë të vlerësojë frymëmarrjen tuaj gjatë gjumit. Një studim i gjumit do të ndihmojë në diagnostikimin e OSA dhe në përcaktimin e trajtimit më të mirë.",
+
+      "benefitsTitle": "Cilat janë përfitimet e trajtimit të OSA?",
+      "benefitsIntro": "Studimet klinike kanë treguar se trajtimi i OSA mund të sjellë efektet e mëposhtme:",
+      "benefits": {
+        "b1": "Rënia e presionit të gjakut (BP)",
+        "b2": "Rritja e aktivitetit dhe qëndrueshmërisë ditore",
+        "b3": "Eliminimi i stresit të tepërt në zemër",
+        "b4": "Reduktimi i rrezikut të infarktit në zemër, goditjes dhe sëmundjeve të zemrës"
+      }
+    },
+    "diabetes": {
+      "title": "Diabeti dhe Apnea e Gjumit",
+      "relationshipTitle": "Marrëdhënia Ndërmjet Diabetit dhe Apnees së Gjumit",
+      "p1": "Studimet klinike kanë treguar një lidhje ndërmjet Diabetit Tip 2 dhe Apnees Obstruktive të Gjumit (OSA). OSA është një çrregullim i zakonshëm në të cilin rruga e sipërme e frymëmarrjes mbyllet përsëri gjatë gjumit. Mbyllja e rrugës së frymëmarrjes shkakton reduktim të rrjedhës së ajrit dhe rritje të presionit në zemër, duke çuar në rritje të presionit të gjakut. Nëse nuk trajtohet, kjo gjendje mund të ndikojë negativisht në kontrollin e glukozës dhe në rezistencën ndaj insulinës, duke çuar në rregullime të sheqerit në gjak.",
+
+      "riskTitle": "A jeni në rrezik?",
+      "risk": {
+        "q1": "A bën zhurmë kur flini?",
+        "q2": "A përjetoni ndonjë ndërprerje në frymëmarrje gjatë gjumit?",
+        "q3": "A keni patur ndonjëherë presion të lartë të gjakut?",
+        "q4": "A ndiheni të nevojshëm për të fjetur gjatë gjithë ditës?"
+      },
+
+      "recommendation": "Nëse përgjigjeni po për dy ose më shumë nga pyetjet e mësipërme, rekomandohet që të konsultoheni me një specialist. Mjeku juaj mund të vendosë të vlerësojë frymëmarrjen tuaj gjatë gjumit. Një studim i gjumit do të ndihmojë në diagnostikimin e OSA dhe në përcaktimin e trajtimit më të mirë.",
+
+      "benefitsTitle": "Cilat janë përfitimet e trajtimit të OSA?",
+      "benefitsIntro": "Studimet klinike kanë treguar se trajtimi i OSA mund të sjellë efektet e mëposhtme:",
+      "benefits": {
+        "b1": "Parandalimi ose vonimi i zhvillimit të diabetit tip 2",
+        "b2": "Reduktimi i komplikacioneve të diabetit",
+        "b3": "Rritja e aktivitetit dhe qëndrueshmërisë ditore",
+        "b4": "Reduktimi i rrezikut të infarktit në zemër, goditjes dhe sëmundjeve të zemrës"
+      }
+    }
+  },
+  "insomnia": {
+    "title": "Insomni",
+    "p1": "Insomnia ka 3 lloje të ndryshme: të përkohshme, të ndërprerë dhe kronike. Insomnia e përkohshme shihet vetëm për disa netë. Nëse insomnia e përkohshme përsëritet nga koha në kohë, ajo quhet insomnia e ndërprerë. Insomnia kronike është emri i dhënë për insomnia që zgjat një muaj ose më shumë.",
+    "p2": "Insomnia mund të jetë një sëmundje, por gjithashtu mund të jetë një simptomë e një sëmundjeje tjetër. Njerëzit që vuajnë nga insomnia kanë vështirësi në fjetje, zgjojnë shpesh gjatë natës dhe kanë vështirësi për të fjetur përsëri, zgjojnë herët në mëngjes, dhe prandaj nuk mund të kenë një gjumë të qetë.",
+    "p3": "Njerëzit me insomnia të përkohshme dhe të ndërprerë kanë përjetuar një ose më shumë nga këto:",
+    "li1": "Stresi.",
+    "li2": "Zhurma ambientale.",
+    "li3": "Temperaturat e larta.",
+    "li4": "Ndryshimet ambientale.",
+    "li5": "Çrregullimet e gjumit/zgjohet për shkak të fluturimeve të gjata ose ndryshimeve në oraret e punës.",
+    "p4": "Efektet anësore të medikamenteve të përdorura.",
+    "p5": "Arsyet e insomnias kronike janë më komplekse dhe ndodhin si rezultat i kombinimeve të faktorëve të mëposhtëm:",
+    "li6": "Depresioni.",
+    "li7": "Përdorimi i pijeve me kafeinë dhe alkoolit.",
+    "li8": "Oraret e punës në ndërrime shqetësojnë ciklet e gjumit.",
+    "li9": "Stresi kronik.",
+    "li10": "Artriti.",
+    "li11": "Sëmundjet e veshkave.",
+    "li12": "Dështimi i zemrës.",
+    "li13": "Astma.",
+    "li14": "Çrregullime të tjera të gjumit si apnea e gjumit dhe narkolepsia.",
+    "li15": "Sindromi i këmbëve të shqetësuara.",
+    "li16": "Çrregullimet e tiroides.",
+    "span1": "Kam insomnia, çfarë duhet të bëj?",
+    "p6": "Nëse dyshoni se keni insomnia të përkohshme ose të ndërprerë, konsultohuni fillimisht me mjekun tuaj. Shmangni kafeinën, nikotinën, alkoolin dhe gjumë të pasdites dhe mbrëmjes. Ushtrimi i rregullt dhe shkuarja në shtrat në të njëjtën kohë çdo natë mund të i kujtojë trurit tuaj se është koha për të fjetur.",
+    "p7": "Sigurohuni që ambienti juaj i gjumit të jetë i qetë, i errët dhe sa më i rehatshëm të jetë e mundur. Nëse nuk mund të flini brenda 30 minutash, provoni të relaksoheni dhe të qetësoheni. Nëse mbeteni të ngujuar në një mendim të ngurtë, mund të provoni të mendoni për gjëra të ndryshme."
+  },
+  "narcolepsy": {
+    "title": "Narkolepsi",
+    "p1": "Në narkolepsi, një çrregullim kompleks i gjumit me origjinë neurologjike, gjumi i natës është i shqetësuar dhe pacientët kanë sulme të pakontrollueshme gjumi gjatë ditës. Në 70% të narkoleptikëve, vërehen sulme të katapleksisë dhe relaksimit (atonia), të cilat mund të zgjasin nga sekonda deri në një gjysmë ore dhe gjatë të cilave ndjenja është e qartë. Duke qenë se trupi relaksohet papritur dhe plotësisht, personi mund të bjerë në tokë. Është e rrallë që relaksimet të vërehen në zona lokale.",
+    "p2": "Narkoleptikët mund të ndihen shumë të çlodhur kur zgjojnë, por ata mund të bien përsëri në gjumë një orë ose dy më vonë. Ata mund të përjetojnë halucinacione në fillim dhe në fund të gjumit.",
+    "p3": "Lëvizjet Periodike të Këmbëve (PLM) gjatë gjumit janë shpesh të pranishme në pacientët narkoleptikë. Megjithatë, dhimbjet e kokës, shikimi i mjegullt, irritabiliteti, depresioni dhe izolimi social mund të shoqërojnë narkolepsinë si simptoma të tjera.",
+    "p4": "Paraliza e gjumit, e cila shihet në afërsisht gjysmën e individëve normalë në një moment të jetës së tyre dhe zgjat vetëm për disa minuta, ndodh si një simptomë e përsëritur e sëmundjes në afërsisht gjysmën e narkoleptikëve.",
+    "p5": "Nëse mendoni se keni narkolepsi, duhet të konsultoheni menjëherë me një specialist në trajtimin e çrregullimeve të gjumit."
+  },
+  "parasomnia": {
+    "title": "Parasomnia",
+    "p": "Parasomnitë janë çrregullime që ndodhin në kufirin e gjumit dhe zgjuarjes dhe nuk janë as zgjuar as të fjetur. Këto çrregullime ndodhin si rezultat i transferimit të aktivizimit të Sistemit Nervor Qendror në sistemin nervor autonom dhe muskujt skeletorë. Parasomnitë janë zakonisht më të zakonshme në fëmijëri se sa në moshën e rritur. Në Klasifikimin Ndërkombëtar të Çrregullimeve të Gjumit: Manuali i Diagnostikimit dhe Kodifikimit (ICSD), të publikuar nga Shoqata Amerikane e Çrregullimeve të Gjumit (ASDA) në vitin 1991, parasomnitë shqyrtohen nën këto tituj: Çrregullimet e Zgjimit (Zgjime Konfuzionale, Ecja gjatë Gjumit, Terrorët e Gjumit) Çrregullimet e Kalimit nga Gjumë në Zgjuar (Çrregullimi i Lëvizjeve Ritmike, Fillimet e Gjumit, Biseda gjatë Gjumit, Krampet e Këmbëve gjatë Natës) Parasomnitë e Lidhuara me Gjumë REM (Makthet, Paraliza e Gjumit, Erekcioni i Pashkruar gjatë Gjumit, Erekcioni i Dhembshëm gjatë Gjumit, Arresti i Sinusit gjatë Gjumit REM, Çrregullimi i Sjelljes gjatë Gjumit REM) Parasomnitë e Tjera (Bruksizmi i Gjumit, Enurezisi i Gjumit, Gëlltitja Abnormale gjatë Gjumit, Distonia Paroksizmale Nocturne, Vdekja e Papritur Nocturne e Pashpjeguar, Gërhitja Primare, Apnea e Foshnjës gjatë Gjumit, Sindroma e Hipoventilacionit Qendror Kongenital, Sindroma e Vdekjes së Foshnjave, Myoklonusi i Benign i Gjumit në Foshnjë) Parasomnitë e Tjera që Nuk Specifikohen Ndryshe."
+  },
+  "restless-leg-syndrome": {
+    "title": "Sindroma e këmbëve të shqetësuara",
+    "p1": "Sindroma e këmbëve të shqetësuara është një çrregullim neurologjik që ndonjëherë nuk është plotësisht i përcaktuar, duke përfshirë shqetësimin, shqetësimin, nevojën për të lëvizur, mpirjen dhe ndjesinë e shpimit në këmbë gjatë gjumit ose pushimit (kur jeni ulur ose shtrirë). ",
+    "span1": "Simptomat",
+    "li1": "Dëshira për të lëvizur këmbët lind për shkak të ndjenjës së pakëndshme në këmbë.",
+    "li2": "Ndodh ose përkeqësohet në situata të tilla si qëndrimi ulur ose shtrirë.",
+    "li3": "Përmirësohet pjesërisht ose plotësisht kur kryhen lëvizje të tilla si ecja dhe shtrirja.",
+    "li4": "Shihet të rritet në mbrëmje në krahasim me orët e ditës ose shfaqet vetëm në orët e mbrëmjes.",
+    "span2": "Kriteret mbështetëse",
+    "li5": "Prania e sindromës së këmbëve të shqetësuara në familje.",
+    "li6": "Përfitoni nga terapia me ilaçe dopaminergjike.",
+    "li7": "Prania e lëvizjeve periodike të këmbëve gjatë gjumit dhe/ose zgjimit (PLM).",
+    "li8": "Pagjumësia.",
+    "li9": "Progresi kronik progresiv i çrregullimit dhe/ose sulmet akute.",
+    "span3": "Diagnoza",
+    "p2": "Studimet kanë treguar se kjo sëmundje haset në një deri në dhjetë në çdo njëqind njerëz. ",
+    "span4": "Mjekimi",
+    "p3": "Nëse mendoni se keni sindromën e këmbëve të shqetësuara, konsultohuni me një mjek specialist. "
+  }
+}

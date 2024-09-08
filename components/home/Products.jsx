@@ -11,13 +11,15 @@ import {
 } from "@/components/ui/carousel";
 import { kose, saglikci1 } from "@/public";
 import Autoplay from "embla-carousel-autoplay";
+import { useTranslation } from "react-i18next";
 
 const Products = () => {
+  const {t} = useTranslation();
   return (
     <section className="w-full py-12">
       <div className="mx-auto px-4 flex flex-col">
         <div className="text-left ml-14 mb-10 w-[70%] 2xl:self-center">
-          <h1 className="font-bold text-4xl text-gray-800 mb-4">Featured Products</h1>
+          <h1 className="font-bold text-4xl text-gray-800 mb-4">{t('home:carousel_header')}</h1>
         </div>
         {/* Main Flex Container */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center">
@@ -58,7 +60,7 @@ const Products = () => {
                     <div className="self-start">
                       <h2 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h2>
                       <Button className="mt-4 bg-primary-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-200">
-                        View Details
+                      {t('home:carousel_detail')}
                         <MdArrowRightAlt className="inline ml-2" />
                       </Button>
                     </div>

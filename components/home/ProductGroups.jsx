@@ -5,10 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
+import { useTranslation } from "react-i18next";
 
 const ProductGroups = () => {
   // State to keep track of the currently hovered menu item
   const [hoveredMenu, setHoveredMenu] = useState(null);
+  const { t }= useTranslation();
 
   return (
     <div className="w-full pb-16 mb-16">
@@ -38,11 +40,11 @@ const ProductGroups = () => {
               )}
             </div>
             {/* Optional: display the category name if hovered */}
-            <p className="mt-4">{hoveredMenu ? hoveredMenu.category : "Hover a product group"}</p>
+            <p className="mt-4">{hoveredMenu ? hoveredMenu.category : ""}</p>
           </div>
 
           <div className="flex flex-col md:items-end max-md:w-full">
-            <h2 className="font-semibold text-xl mb-5">Product Groups</h2>
+            <h2 className="font-semibold text-xl mb-5">{t('home:groups_header')}</h2>
             <div className="flex max-md:w-full">
               <div className="flex flex-col md:items-end py-2 max-md:w-full">
                 {/* Loop through dropdownMenu and create links */}
@@ -54,7 +56,7 @@ const ProductGroups = () => {
                     onMouseEnter={() => setHoveredMenu(menu)}
                     onMouseLeave={() => setHoveredMenu(null)}
                   >
-                    {menu.category}
+                    {t(`${menu.category}`)}
                   </Link>
                 ))}
               </div>
@@ -68,7 +70,7 @@ const ProductGroups = () => {
           className="mt-10 w-[90%] md:w-[350px] p-6 px-10 rounded-sm shadow-md z-10"
           style={{ backgroundImage: `url(${klinik.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-          <h2 className="text-2xl font-semibold text-center mb-6 text-white">Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-center mb-6 text-white">{t('home:groups_contact')}</h2>
           <form className="space-y-4">
             <div>
               <input
@@ -76,7 +78,7 @@ const ProductGroups = () => {
                 id="fullname"
                 name="fullname"
                 className="input-contact"
-                placeholder="Enter your full name"
+                placeholder={t('home:groups_name')}
               />
             </div>
             <div>
@@ -85,7 +87,7 @@ const ProductGroups = () => {
                 id="phone"
                 name="phone"
                 className="input-contact"
-                placeholder="Enter your phone number"
+                placeholder={t('home:groups_phone')}
               />
             </div>
             <div>
@@ -94,7 +96,7 @@ const ProductGroups = () => {
                 id="email"
                 name="email"
                 className="input-contact"
-                placeholder="Enter your email"
+                placeholder={t('home:groups_email')}
               />
             </div>
             <div>
@@ -103,7 +105,7 @@ const ProductGroups = () => {
                 name="message"
                 rows="4"
                 className="input-contact h-[100px]"
-                placeholder="Enter your message"
+                placeholder={t('home:groups_message')}
               ></textarea>
             </div>
             <div className="flex justify-center">
@@ -111,7 +113,7 @@ const ProductGroups = () => {
                 type="submit"
                 className="w-full bg-gradient-to-r from-blue-700 to-sky-400"
               >
-                Send Message
+                {t('home:groups_submit')}
               </Button>
             </div>
           </form>

@@ -1,0 +1,33 @@
+{
+    "sleep-disorders": "Sleep Disorders",
+    "sleep-disorders_sleep-disordered-breathing": "Sleep Disordered Breathing",
+        "sleep-disorders_sleep-disordered-breathing_obstructive-sleep-apnea": "Obstructive Sleep Apnea - OSA",
+        "sleep-disorders_sleep-disordered-breathing_central-sleep-apnea": "Central Sleep Apnea - CSA",
+        "sleep-disorders_sleep-disordered-breathing_complex-sleep-apnea": "Complex Sleep Apnea - ComSA",
+        "sleep-disorders_sleep-disordered-breathing_periodic-breathing": "Periodic Breathing - CSR",
+    "sleep-disorders_diseases-associated-with-apnea": "Diseases Associated with Apnea",
+        "sleep-disorders_diseases-associated-with-apnea_heart-disease-and-sleep-apnea": "Heart Disease and Sleep Apnea",
+        "sleep-disorders_diseases-associated-with-apnea_diabetes-and-sleep-apnea": "Diabetes and Sleep Apnea",
+        "sleep-disorders_diseases-associated-with-apnea_hypertension-and-sleep-apnea": "Hypertension and Sleep Apnea",
+        "sleep-disorders_diseases-associated-with-apnea_paralysis-and-sleep-apnea": "Paralysis and Sleep Apnea",
+        "sleep-disorders_diseases-associated-with-apnea_menopaus-and-sleep-apnea": "Menopause and Sleep Apnea",
+        "sleep-disorders_diseases-associated-with-apnea_chronic-pain-and-sleep-apnea": "Chronic Pain and Sleep Apnea",
+    "sleep-disorders_insomnia": "Insomnia",
+    "sleep-disorders_narcolepsy": "Narcolepsy",
+    "sleep-disorders_parasomnia": "Parasomnia",
+    "sleep-disorders_restless-legs-syndrome": "Restless Legs Syndrome",
+
+
+    "respiratory-failure": "Respiratory Failure",
+    "respiratory-failure_chronic-obstructive-pulmonary-disease": "Chronic Obstructive Pulmonary Disease - COPD",
+    "respiratory-failure_emphysema": "Emphysema",
+    "respiratory-failure_muscular-dystrophy": "Muscular Dystrophy",
+    "respiratory-failure_post-polio-syndrome": "Post Polio Syndrome - PPS",
+    "respiratory-failure_amyotrophic-lateral-sclerosis": "Amyothrophic Lateral Sclerosis - ALS",
+    "respiratory-failure_chronic-bronchitis": "Chronic Bronchitis",
+    "respiratory-failure_bronchiectasis": "Bronchiectasis"
+
+
+
+  }
+  

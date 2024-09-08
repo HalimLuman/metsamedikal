@@ -8,8 +8,7 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     try {
-      const storedCart = localStorage.getItem("cart");
-      console.log("Loaded cart from local storage:", storedCart); // Debug log
+      const storedCart = localStorage.getItem("cart");// Debug log
       if (storedCart) {
         const parsedCart = JSON.parse(storedCart);
         console.log('Parsed JSON:', parsedCart);

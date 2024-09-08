@@ -1,10 +1,9 @@
 import Banner from "@/components/home/Banner";
+import Products from "@/components/home/Products";
 import Collaboration from "@/components/home/Collaboration";
 import ProductGroups from "@/components/home/ProductGroups";
-import Products from "@/components/home/Products";
 
-
-const Home = () => {
+export default function Home() {
   return (
     <main>
       <Banner />
@@ -13,6 +12,4 @@ const Home = () => {
       <ProductGroups />
     </main>
   );
-};
-
-export default Home;
+}

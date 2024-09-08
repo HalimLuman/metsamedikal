@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { arrow, category1, category2, category3, insan1, insan2 } from "@/public"; // Assume insan2 is the second image
+import { useTranslation } from "react-i18next";
 
 const CategoryItem = ({ title, subtitle, imageSrc }) => (
   <div className="flex flex-col sm:flex-row items-center max-lg:shadow">
@@ -19,6 +20,7 @@ const CategoryItem = ({ title, subtitle, imageSrc }) => (
 );
 
 const Banner = () => {
+  const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [insan1, insan2];
   const [fade, setFade] = useState(true);
@@ -38,7 +40,7 @@ const Banner = () => {
   return (
     <section className="w-full py-5 bg-[#f6f6f6] relative z-[1]">
       <div className="container flex justify-center mx-auto">
-        <div className="relative w-[400px] h-[300px] 2xl:w-[500px] 2xl:h-[400px] left-[140px] 2xl:left-[200px] top-[20px] overflow-hidden hidden lg:flex">
+        <div className="relative w-[450px] h-[350px] 2xl:w-[500px] 2xl:h-[400px] left-[140px] 2xl:left-[200px] top-[20px] overflow-hidden hidden lg:flex">
           <div
             className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${fade ? "opacity-100" : "opacity-0"}`}
             key={currentImageIndex}
@@ -46,13 +48,13 @@ const Banner = () => {
             <Image src={images[currentImageIndex]} alt="Person" fill objectFit="cover" />
           </div>
         </div>
-        <div className="w-[300px] self-center bg-primary-blue justify-center py-5 hidden lg:flex">
-          <h1 className="text-lg text-white font-medium">Medical Products</h1>
+        <div className="w-[330px] self-center bg-primary-blue justify-center py-5 hidden lg:flex">
+          <h1 className="text-lg text-white font-medium">{t('home:banner_medical')}</h1>
         </div>
         <div className="p-3 lg:bg-primary-blue flex flex-col gap-2">
-          <CategoryItem title="RESPIRATORY" subtitle="DEVICES" imageSrc={category3} />
-          <CategoryItem title="ORTHOPEDICS" subtitle="PRODUCTS" imageSrc={category1} />
-          <CategoryItem title="LYMPHEDEMA" subtitle="PRODUCTS" imageSrc={category2} />
+          <CategoryItem title={t('home:banner_respiratory')} subtitle={t('home:banner_devices')} imageSrc={category3} />
+          <CategoryItem title={t('home:banner_orthopedic')} subtitle={t('home:banner_products')} imageSrc={category1} />
+          <CategoryItem title={t('home:banner_lymphedema')} subtitle={t('home:banner_products')} imageSrc={category2} />
         </div>
       </div>
     </section>

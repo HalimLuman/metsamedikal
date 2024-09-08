@@ -4,25 +4,25 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import DropDownSub from "./DropDownSub";
-import { dropdownMenu } from "@/constants";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const DropDown = () => {
+const DropDown = ({ menu, title }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
         <div className="flex items-center nav-link gap-1">
           <MdKeyboardArrowDown className="text-lg" />
-          <h1>Products</h1>
+          <h1>{title}</h1>
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        {dropdownMenu.map((item,index) => (
+        {menu.map((item, index) => (
           <DropDownSub
+            key={index}
             category={item.category}
             link={item.link}
             subCategory={item.subcategory}
-            key={index+1}
+            title={title}
           />
         ))}
       </DropdownMenuContent>

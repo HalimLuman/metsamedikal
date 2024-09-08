@@ -61,6 +61,10 @@ import yaraBakim from './product-groups/yarabakim.png'
 import yurumeYardim from './product-groups/yurumeyeYardimci.png'
 import klinik from './product-groups/klinik.png'
 
+import osa from './diseases/osa.jpg'
+import csa from './diseases/csa.jpg'
+import periodic from './diseases/periodic.jpg'
+
 
 export {
     nextImage,
@@ -123,5 +127,9 @@ export {
     varisCorap,
     yaraBakim,
     yurumeYardim,
-    klinik
+    klinik,
+
+    osa,
+    csa,
+    periodic,
 }

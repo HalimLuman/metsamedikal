@@ -1,12 +1,15 @@
+'use client'
 import { dropdownMenu } from "@/constants";
 import { footerLeft, footerRight, logo, logo2 } from "@/public";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { CiFacebook, CiInstagram, CiLinkedin, CiLocationOn, CiMail, CiPhone, CiTwitter, CiYoutube } from "react-icons/ci";
 import { PiGoogleLogoLight, PiWhatsappLogoLight } from "react-icons/pi";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const midIndex = Math.ceil(dropdownMenu.length / 2);
   const firstHalf = dropdownMenu.slice(0, midIndex);
   const secondHalf = dropdownMenu.slice(midIndex);
@@ -52,23 +55,23 @@ const Footer = () => {
 
           {/* Products Section */}
           <div className="mb-8 lg:mb-0 max-lg:w-2/3">
-            <h3 className="text-lg font-semibold pb-1">Products</h3>
+            <h3 className="text-lg font-semibold pb-1">{t('products')}</h3>
             <hr />
             <div className="flex flex-col lg:flex-row lg:space-x-[5rem] mt-3">
               <div className="flex flex-col space-y-2">
                 {firstHalf.map((item) => (
-                  <Link href={item.link} key={item.category}>
+                  <Link href={`/products/${item.link}`} key={item.category}>
                     <span className="hover:text-primary-blue cursor-pointer text-sm">
-                      {item.category}
+                      {t(`${item.category}`)}
                     </span>
                   </Link>
                 ))}
               </div>
               <div className="flex flex-col space-y-2">
                 {secondHalf.map((item) => (
-                  <Link href={item.link} key={item.category}>
+                  <Link href={`/products/${item.link}`} key={item.category}>
                     <span className="hover:text-primary-blue cursor-pointer text-sm">
-                      {item.category}
+                    {t(`${item.category}`)}
                     </span>
                   </Link>
                 ))}
@@ -78,7 +81,7 @@ const Footer = () => {
 
           {/* Social Media Section */}
           <div className="max-lg:w-2/3">
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('home:groups_contact')}</h3>
             <div className="flex flex-col space-y-2">
                 <div className="flex items-center gap-2">
                   <CiPhone />

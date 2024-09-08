@@ -3,9 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { useParams } from "next/navigation";
 import { dropdownMenu } from "@/constants";
+import { useTranslation } from "react-i18next";
 
 const Layout = ({ children }) => {
   const params = useParams();
+  const { t } = useTranslation();
 
   const formatHeader = (slug) => {
     if (!slug) return ''; // Return an empty string if slug is undefined
@@ -36,7 +38,7 @@ const Layout = ({ children }) => {
                 href={`/products/${category}`}
                 className="text-primary-blue font-semibold hover:text-blue-500"
               >
-                {formatHeader(category)}
+                {formatHeader(t(`categories:${category}`))}
               </Link>
             ) : (
               <span className="text-gray-800 font-semibold">
@@ -49,7 +51,7 @@ const Layout = ({ children }) => {
                 <span className="mx-4 text-gray-700">/</span>
 
                 <span className="text-gray-800 font-semibold">
-                  {formatHeader(subcategory)}
+                {formatHeader(t(`categories:${category}_${subcategory}`))}
                 </span>
               </>
             )}
@@ -66,7 +68,7 @@ const Layout = ({ children }) => {
                       href={`/products/${category.link}`}
                       className="text-gray-700 hover:text-blue-600 text-sm font-medium"
                     >
-                      <span>{category.category}</span>
+                      <span>{t(`${category.category}`)}</span>
                     </Link>
                   </li>
                 ))}

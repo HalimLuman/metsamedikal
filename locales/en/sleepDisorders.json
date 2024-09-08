@@ -1,0 +1,311 @@
+{
+  "sdb": {
+    "osa": {
+      "title": "Obstructive Sleep Apnea - OSA",
+      "p1": "OSA is a very common and often undiagnosed sleep disorder. Obstructive Sleep Apnea is a life-threatening condition that occurs when breathing stops and air does not flow to the lungs due to repeated blockages in the airway during sleep. This blockage is usually caused by the root of the tongue blocking the airway, the size of the tissues in the airway, and the muscles that keep the airway open relaxing during sleep.",
+      "p2": "Apnea is the blockage that lasts longer than 10 seconds, and hypopnea is the blockage of the airway that lasts longer than 10 seconds, causing inadequate breathing. Due to the frequent disruption of sleep by apneas and hypopneas, patients with OSA are deprived of deep and restful sleep. Respiratory interruptions can occur 30 times or more per hour. Most patients are unaware of the interruptions in their breathing during sleep. For this reason, the first people to notice the disease are spouses who sleep together in the same bed. Since patients with Sleep Apnea do not sleep normally, they usually do not wake up refreshed. Not getting enough sleep leads to daytime fatigue, sleepiness, aggravation of daily activities, and loss of attention.",
+      "p3": "Low oxygen levels in the blood due to insufficient air intake and irregularities in breathing efforts during sleep cause cardiovascular system-related disorders to increase. As a result, Sleep Apnea is an important disorder that should be paid attention to and questioned in order to increase the quality of life. It is estimated that there are more than 2 million OSA patients in our country.",
+      "p4": "PAP device treatment is accepted by patients in a very large proportion of cases, provided that the patient is given sufficient information about his/her disease, the sleep test (PSG, PG) is performed in a comfortable environment, the appropriate device model is determined with the titration device, a device with comfort features is used, and the mask that the patient is most comfortable with is found.",
+      "p5": "If you snore regularly and think you have one or more of the following symptoms, you may need to have a sleep test (PSG, PG) as soon as possible by consulting your doctor.",
+      "span1": "Important symptoms:",
+      "li1": "Excessive daytime sleepiness",
+      "li2": "Loud and intermittent snoring",
+      "li3": "Difficulty breathing and feeling of suffocation during sleep",
+      "span2": "Other common symptoms:",
+      "li4": "Morning headache and fatigue",
+      "li5": "Getting up frequently at night to go to the toilet",
+      "span3": "What happens to a patient with Sleep Apnea if it is not treated properly?",
+      "li6": "It has been determined that the following risks increase significantly in patients who do not have Sleep Apnea diagnosed and treated:",
+      "li7": "Hypertension",
+      "li8": "Heart diseases and irregular heartbeat",
+      "li9": "Heart attack",
+      "li10": "Paralysis",
+      "li11": "Increase in accidents while driving and at work",
+      "p6": "The most effective treatment for Sleep Apnea is CPAP and BiPAP (VPAP) devices, which prevent blockage by increasing the pressure in the airway with nasal or mouth-nose masks. These devices have different models depending on the patient's comfort and treatment follow-up features.",
+      "p7": "Fixed pressure CPAP devices, CPAPs with EPR comfort mode, CPAPs (APAP) that can automatically adjust the pressure according to the patient's needs, BiPAPs (VPAP) that can apply 2 different levels of pressure during inhalation and exhalation, and autoBiPAP devices that can automatically adjust these pressure levels separately are treatment products with different working principles (algorithms) used for the treatment of sleep apnea.",
+      "p8": "Surgeries, oral devices, and sleep position stabilizers for the treatment of Sleep Apnea are alternative methods, especially for patients who cannot adapt to the use of the device, even if they do not have as effective results as PAP device treatment."
+    },
+
+    "periodicBreathing": {
+      "title": "Periodic Breathing - CSR",
+      "p1": "Periodic Breathing is a respiratory disorder characterized by the continuous increase and decrease in the amount of air inspired and central apneas or hypopneas following hyperventilation. Periodic Breathing has many forms, the most common of which is Cheyne-Stokes Respiration, which occurs particularly in heart failure and cerebrovascular diseases. Central apneas or hypopneas are seen with increasing and decreasing respiratory volume and respiratory effort.",
+      "span1": "Treatment Options in Periodic Breathing",
+      "p2": "Scientific studies have shown that the use of BiPAP devices with S/T features provides partial benefit in eliminating central apneas. With the widespread use of BiPAP autoSV (ASV) devices, which are specially produced for the treatment of Periodic Respiration, very beneficial results are obtained in eliminating the discomfort.",
+      "p3": "As can be seen in the respiratory and pressure graphs below, the BiPAP autoSV device with Adaptive Servo Ventilation (ASV) provides pressure support in the patient's central apneas and hypopneas, and prevents hyperventilation by reducing respiratory support when it detects an increase in the amount of inhaled air."
+    },
+    "csa": {
+      "title": "Central Sleep Apnea - CSA",
+      "imageAlt": "Graph showing Central Sleep Apnea",
+      "p1": "Central Sleep Apnea is a breathing pattern characterized by a sudden cessation of breathing after inhalation. This interruption is due to a problem in the brain's respiratory control center rather than an obstruction in the airway. The absence of respiratory effort in the chest and abdomen is an indication that the respiratory interruption is not of the obstructive type."
+    },
+    "commSA": {
+      "title": "Complex Sleep Apnea - CommSA",
+      "imageAlt": "Graph showing Complex Sleep Apnea",
+      "p1": "Complex Sleep Apnea is a centrally originated respiratory disorder that occurs when the pressure applied during the use of PAP devices by some patients with obstructive type apnea causes central apneas despite the elimination of OSA.",
+      "p2": "The dynamics that lead to Complex Sleep Apnea are not fully known yet."
+    }
+  },
+  "dawa": {
+    "heartDisease": {
+      "title": "Heart Disease and Sleep Apnea",
+      "subtitle1": "The Importance of Sleep Apnea in the Treatment and Follow-up of Heart Diseases",
+      "p1": "Sleep Apnea poses a significant risk for your patients with hypertension, heart failure, stroke/paralysis, and atrial fibrillation.",
+      "p2": "Sleep Apnea has been found to be associated with increased risks of hypertension, heart failure, stroke, and atrial fibrillation. Performing sleep apnea tests on patients with these vital risks is rapidly becoming widespread.",
+
+      "hypertensionTitle": "Hypertension",
+      "hypertension": {
+        "p1": "Sleep Apnea is closely associated with a higher risk of hypertension, even after controlling for all known parameters.",
+        "p2": "Sleep Apnea causes hypertension in a dose-response manner.",
+        "p3": "83% of hypertension patients who do not respond to treatment have severe sleep apnea.",
+        "p4": "JNC7 confirms that sleep apnea is an important factor in causing hypertension."
+      },
+
+      "heartFailureTitle": "Heart Failure",
+      "heartFailure": {
+        "p1": "50-70% of men with heart failure have Sleep Apnea.",
+        "p2": "Cheyne-Stokes Respiration is associated with severe heart failure and a poor prognosis.",
+        "p3": "Obstructive sleep apnea significantly increases a patient's risk of developing heart failure."
+      },
+
+      "intermediateMechanisms": "The intermediate mechanisms listed below are associated with Obstructive Sleep Apnea and can potentially cause Cardiovascular Diseases.",
+      "mechanismDetails": "These mechanisms may interact with each other and cause pathophysiological consequences.",
+
+      "sleepApneaTitle": "Sleep Apnea",
+      "sleepApnea": {
+        "p1": "Hypoxia / Reoxygenation, Hypercapnia, Intrathoracic Pressure Change"
+      },
+
+      "resultsTitle": "Results",
+      "results": "Sympathetic Activation, Endothelial Disorder, Vasoconstriction, Vascular Oxidative Stress, and more.",
+
+      "riskTitle": "Increased Risk",
+      "risks": "Hypertension, Heart Failure, Cardiac Rhythm Disorders, Cardiac Ischemia, and more.",
+
+      "goldStandardTitle": "“Gold Standard”",
+      "papTreatmentTitle": "Treatment of Sleep Apnea with Positive Airway Pressure (PAP)",
+      "papTreatment": "Sleep apnea treated with positive pressure therapy improves breathing during sleep and helps improve cardiovascular functions.",
+
+      "papHypertensionTitle": "Positive Effects of PAP Treatment in Hypertension:",
+      "papHypertension": {
+        "p1": "It reduces daytime blood pressure in OSA patients.",
+        "p2": "It effectively reduces systolic blood pressure in resistant HTN patients.",
+        "p3": "It normalizes nocturnal blood pressure in non-dipper OSA patients.",
+        "p4": "It reduces the need for hypertension medications."
+      },
+
+      "papHeartFailureTitle": "Positive Effects of PAP Therapy in Heart Failure:",
+      "papHeartFailure": {
+        "p1": "Increased LVEF%, LVESD, and changes in systolic blood pressure.",
+        "p2": "Decreased incidence of ventricular tachycardia and improved quality of life.",
+        "p3": "Decreased mortality rate and cardiac transplantation rate."
+      },
+
+      "otherImprovementsTitle": "Other improvements seen in patients treated with a PAP device:",
+      "otherImprovements": {
+        "p1": "Mitral insufficiency, atrial natriuretic peptide.",
+        "p2": "Somnolence.",
+        "p3": "Oxygen uptake."
+      },
+
+      "bulkScanningTitle": "Bulk Scanning",
+      "bulkScanning": "Short questions about the relationship between Heart Failure and Hypertension can be asked to the patient or companion with a simple questionnaire.",
+
+      "diagnosisTitle": "Diagnosis",
+      "diagnosis": "Polysomnography or portable sleep tests should be performed to confirm the diagnosis.",
+
+      "treatmentTitle": "Treatment",
+      "treatment": "Positive Airway Pressure (PAP) is the gold standard treatment for sleep apnea.",
+
+      "followUpTitle": "Follow-up",
+      "followUp": "Cardiovascular risk must be reassessed regularly and follow-up polysomnography performed periodically.",
+
+      "periodicBreathingTitle": "Periodic Breathing",
+      "periodicBreathing": {
+        "p1": "Periodic Breathing causes irregular fluctuations in arterial oxygen levels.",
+        "p2": "These fluctuations have negative effects on heart and respiratory function.",
+        "p3": "Patients with Heart Failure and Obstructive Sleep Apnea often suffer from periodic breathing.",
+        "p4": "Treatment of sleep apnea is important to improve overall health in these patients."
+      }
+    },
+    "chronicPain": {
+      "title": "Chronic Pain and Sleep Apnea",
+      "relationshipTitle": "The Relationship Between Chronic Pain and Sleep Apnea",
+      "p1": "Clinical studies have shown a link between chronic pain syndrome and sleep-disordered breathing (SDB). In some people, airflow is reduced during sleep. This can cause interruptions in sleep and poor sleep quality. Sleep-disordered breathing can cause daytime sleepiness, headaches, and chronic pain and aches.",
+
+      "riskTitle": "Are you at risk?",
+      "risk": {
+        "q1": "Do you snore?",
+        "q2": "Do you experience any breathing interruptions during sleep?",
+        "q3": "Are you having trouble falling asleep?",
+        "q4": "Do you wake up at night and then have trouble falling asleep?",
+        "q5": "Do you feel the need to sleep throughout the day?"
+      },
+
+      "recommendation": "If you answer yes to two or more of the questions above, it is recommended that you see a specialist. Your doctor may decide to evaluate your breathing during sleep. A sleep study will help diagnose whether you have OSA and determine the best treatment.",
+
+      "benefitsTitle": "What are the benefits of treating SDB?",
+      "benefitsIntro": "Clinical studies have shown that treatment of sleep-disordered breathing (SDB) may produce the following effects:",
+      "benefits": {
+        "b1": "Decreased need for daytime sleep",
+        "b2": "Increased daily activity and resistance",
+        "b3": "Reduction of chronic pain, stress and migraine pain",
+        "b4": "Reduced risk of heart attack, stroke and heart disease",
+        "b5": "Drop in blood pressure (BP)"
+      }
+    },
+    "menopause": {
+      "title": "Menopause and Sleep Apnea",
+      "relationshipTitle": "The Relationship Between Menopause and Sleep Apnea",
+      "p1": "Clinical studies have shown a link between obstructive sleep apnea (OSA) and postmenopausal women. OSA is a common disorder in which the upper airway repeatedly closes during sleep. The airway is blocked, which reduces airflow and increases pressure on the heart and body. If left untreated, OSA can lead to stroke, type 2 diabetes, and heart disease.",
+
+      "riskTitle": "Are you at risk?",
+      "risk": {
+        "q1": "Do you snore?",
+        "q2": "Do you experience any breathing interruptions during sleep?",
+        "q3": "Have you ever suffered from high blood pressure?",
+        "q4": "Do you wake up at night and then have trouble falling asleep?"
+      },
+
+      "recommendation": "If you answer yes to two or more of the questions above, it is recommended that you see a specialist. Your doctor may decide to evaluate your breathing during sleep. A sleep study will help diagnose whether you have OSA and determine the best treatment.",
+
+      "benefitsTitle": "What are the benefits of treating SDB?",
+      "benefitsIntro": "Clinical studies have shown that treatment of sleep-disordered breathing (SDB) may produce the following effects:",
+      "benefits": {
+        "b1": "Preventing or delaying the development of type 2 diabetes",
+        "b2": "Increased daily activity and resistance",
+        "b3": "Reduced risk of heart attack, stroke and heart disease",
+        "b4": "Drop in blood pressure (BP)"
+      }
+    },
+    "paralysis": {
+      "title": "Paralysis and Sleep Apnea",
+      "relationshipTitle": "Relationship Between Stroke and Sleep Apnea",
+      "p1": "Clinical studies have shown a link between stroke and obstructive sleep apnea (OSA). OSA is a common disorder in which the upper airway repeatedly closes during sleep. The airway is blocked, which causes reduced airflow and increased pressure on the heart and body. If left untreated, this condition can lead to other heart diseases such as stroke, high blood pressure (hypertension), and abnormal heart rhythms.",
+
+      "riskTitle": "Are you at risk?",
+      "risk": {
+        "q1": "Do you snore?",
+        "q2": "Do you experience any breathing interruptions during sleep?",
+        "q3": "Have you ever suffered from high blood pressure?",
+        "q4": "Do you feel the need to sleep throughout the day?"
+      },
+
+      "recommendation": "If you answer yes to two or more of the questions above, it is recommended that you see a specialist. Your doctor may decide to evaluate your breathing during sleep. A sleep study will help diagnose whether you have OSA and determine the best treatment.",
+
+      "benefitsTitle": "What are the benefits of treating SDB?",
+      "benefitsIntro": "Clinical studies have shown that treatment of sleep-disordered breathing (SDB) may produce the following effects:",
+      "benefits": {
+        "b1": "Drop in blood pressure (BP)",
+        "b2": "Increased daily activity and resistance",
+        "b3": "Elimination of excessive stress on the heart",
+        "b4": "Reduced risk of heart attack, stroke and heart disease"
+      }
+    },
+    "highBloodPressure": {
+      "title": "High Blood Pressure and Sleep Apnea",
+      "relationshipTitle": "The Relationship Between High Blood Pressure and Sleep Apnea",
+      "p1": "Clinical studies have shown a link between high blood pressure (BP) and obstructive sleep apnea (OSA). OSA is a common disorder in which the upper airway repeatedly closes during sleep. The airway closure causes reduced airflow and increased pressure on the heart, which increases blood pressure (BP). If left untreated, this can put excessive stress on the heart, increasing the risk of heart attack and stroke.",
+
+      "riskTitle": "Are you at risk?",
+      "risk": {
+        "q1": "Do you snore?",
+        "q2": "Do you experience any breathing interruptions during sleep?",
+        "q3": "Have you ever suffered from high blood pressure?",
+        "q4": "Do you feel the need to sleep throughout the day?"
+      },
+
+      "recommendation": "If you answer yes to two or more of the questions above, it is recommended that you see a specialist. Your doctor may decide to evaluate your breathing during sleep. A sleep study will help diagnose whether you have OSA and determine the best treatment.",
+
+      "benefitsTitle": "What are the benefits of treating OSA?",
+      "benefitsIntro": "Clinical studies have shown that treatment for OSA can produce the following effects:",
+      "benefits": {
+        "b1": "Drop in blood pressure (BP)",
+        "b2": "Increased daily activity and resistance",
+        "b3": "Elimination of excessive stress on the heart",
+        "b4": "Reduced risk of heart attack, stroke and heart disease"
+      }
+    },
+    "diabetes": {
+      "title": "Diabetes and Sleep Apnea",
+      "relationshipTitle": "Relationship Between DIABETES and Sleep Apnea",
+      "p1": "Clinical studies have shown a link between Type 2 Diabetes and Obstructive Sleep Apnea (OSA). OSA is a common disorder in which the upper airway repeatedly closes during sleep. The airway closure causes reduced airflow and increased pressure on the heart, leading to increased blood pressure. If left untreated, this condition can negatively impact glucose control and insulin resistance, leading to blood sugar irregularities.",
+
+      "riskTitle": "Are you at risk?",
+      "risk": {
+        "q1": "Do you snore?",
+        "q2": "Do you experience any breathing interruptions during sleep?",
+        "q3": "Have you ever suffered from high blood pressure?",
+        "q4": "Do you feel the need to sleep throughout the day?"
+      },
+
+      "recommendation": "If you answer yes to two or more of the questions above, it is recommended that you see a specialist. Your doctor may decide to evaluate your breathing during sleep. A sleep study will help diagnose whether you have OSA and determine the best treatment.",
+
+      "benefitsTitle": "What are the benefits of treating OSA?",
+      "benefitsIntro": "Clinical studies have shown that treatment for OSA can produce the following effects:",
+      "benefits": {
+        "b1": "Preventing or delaying the development of type 2 diabetes",
+        "b2": "Reducing diabetes complications",
+        "b3": "Increased daily activity and resistance",
+        "b4": "Reduced risk of heart attack, stroke and heart disease"
+      }
+    }
+  },
+  "insomnia": {
+    "title": "Insomnia",
+    "p1": "Insomnia has 3 different types: temporary, intermittent and chronic. Transient insomnia is seen only for a few nights. If transient insomnia recurs from time to time, it is called intermittent insomnia. Chronic insomnia is the name given to insomnia that lasts for a month or more.",
+    "p2": "Insomnia can be a disease, but it can also be a symptom of another disease. People who suffer from insomnia have difficulty falling asleep, wake up frequently at night and have difficulty falling back asleep, wake up early in the morning, and therefore cannot get a restful sleep.",
+    "p3": "People with transient and intermittent insomnia have experienced one or more of the following:",
+    "li1": "Stress.",
+    "li2": "Environmental noise.",
+    "li3": "High temperatures.",
+    "li4": "Environmental changes.",
+    "li5": "Sleep/wake disorders due to long flights or changes in working hours.",
+    "p4": "Side effects of the drugs used.",
+    "p5": "The causes of chronic insomnia are more complex and occur as a result of combinations of the following factors:",
+    "li6": "Depression.",
+    "li7": "Caffeinated beverages and alcohol use.",
+    "li8": "Shift work hours disrupt sleep cycles.",
+    "li9": "Chronic stress.",
+    "li10": "Arthritis.",
+    "li11": "Kidney diseases.",
+    "li12": "Heart failure.",
+    "li13": "Asthma.",
+    "li14": "Other sleep disorders such as sleep apnea and narcolepsy.",
+    "li15": "Restless legs syndrome.",
+    "li16": "Hyperthyroidism disorders.",
+    "span1": "I have insomnia, what should I do?",
+    "p6": "If you suspect temporary or intermittent insomnia, first consult your doctor. Avoid caffeine, nicotine, alcohol, and afternoon and evening naps. Regular exercise and going to bed at the same time each night can remind your brain that it's time to sleep.",
+    "p7": "Make sure your sleeping environment is quiet, dark and as comfortable as possible. If you can't fall asleep within 30 minutes, try to relax and unwind yourself. If you get stuck on a fixed thought, you can try thinking about different things."
+  },
+  "narcolepsy": {
+    "title": "Narcolepsy",
+    "p1": "In Narcolepsy, a complex sleep disorder of neurological origin, patients' nighttime sleep is disrupted and they have uncontrollable sleep attacks during the day. In 70% of narcoleptics, cataplexy and relaxation (atonia) attacks, which can last from seconds to half an hour and during which consciousness is clear, are observed. Since the body relaxes suddenly and completely, the person may fall to the ground. It is rare for relaxations to be seen in local areas.",
+    "p2": "Narcoleptics may feel very refreshed when they wake up, but they may fall asleep again an hour or two later. They may experience hallucinations at the beginning and end of sleep.",
+    "p3": "Periodic Leg Movements (PLM) during Sleep have been frequently detected in narcoleptic patients. However, headache, blurred vision, irritability, depression and social isolation may accompany Narcolepsy as other symptoms.",
+    "p4": "Sleep Paralysis, which is seen in approximately half of normal individuals at some point in their lives and lasts only for a few minutes, occurs as a recurring disease symptom in approximately half of narcoleptics.",
+    "p5": "If you think you have narcolepsy, you should immediately consult a specialist in the treatment of sleep disorders."
+  },
+  "parasomnia": {
+    "title": "Parasomnia",
+    "p": "Parasomnias are disorders that occur at the border of sleep and wakefulness and are neither awake nor asleep. These disorders occur as a result of the transfer of activation of the Central Nervous System to the autonomic nervous system and skeletal muscles. Parasomnias are generally more common in childhood than in adulthood. In the International Classification of Sleep Disorders: Diagnostic and Coding Manual (ICSD), published by the American Sleep Disorders Association (ASDA) in 1991, parasomnias are examined under the following headings: Awakening Disorders (Confusional Awakenings, Sleepwalking, Sleep Terrors) Sleep-Wake Transition Disorders (Rhythmic Movement Disorder, Sleep Starts, Sleep Talking, Nocturnal Leg Cramps) REM Sleep-Related Parasomnias (Nightmares, Sleep Paralysis, Inadequate Penile Erection During Sleep, Painful Erection During Sleep, REM Sleep Sinus Arrest, REM Sleep Behavior Disorder) Other Parasomnias (Sleep Bruxism, Sleep Enuresis, Abnormal Swallowing During Sleep, Nocturnal Paroxysmal Dystonia, Unexplained Sudden Nocturnal Death, Primary Snoring, Infant Sleep Apnea, Congenital Central Hypoventilation Syndrome, Sudden Infant Death Syndrome, Benign Neonatal Sleep Myoclonus) Other Parasomnias Not Otherwise Specified."
+  },
+  "restless-leg-syndrome": {
+    "title": "Restless Leg Syndrome",
+    "p1": "Restless Leg Syndrome is a neurological disorder that is sometimes not fully defined, including discomfort, restlessness, need to move, numbness, and tingling in the legs while sleeping or resting (while sitting or lying down). This discomfort continues during sleep, and it particularly bothers the person at night. The description of the pain felt in the legs also varies from person to person. Some people try to describe the discomfort they experience with explanations such as 'my legs are moving', 'tickling', 'there is a burning sensation', 'there is a tingling'.",
+    "span1": "Symptoms",
+    "li1": "The desire to move the legs arises due to the uncomfortable feeling in the legs.",
+    "li2": "It occurs or worsens in situations such as sitting or lying down.",
+    "li3": "It partially or completely improves when movements such as walking and stretching are performed.",
+    "li4": "It is seen to increase in the evening compared to the daytime hours or it occurs only in the evening hours.",
+    "span2": "Supporting Criteria",
+    "li5": "Presence of Restless Legs Syndrome in the family.",
+    "li6": "Benefit from dopaminergic drug therapy.",
+    "li7": "Presence of periodic leg movements during sleep and/or wakefulness (PLMs).",
+    "li8": "Insomnia.",
+    "li9": "Chronic progressive progression of the disorder and/or acute attacks.",
+    "span3": "Diagnosis",
+    "p2": "Studies have shown that this disease is encountered in one to ten out of every hundred people. The frequency of the disease increases with age. A genetic transmission relationship is seen in one out of every three patients. The fact that it can be confused with rheumatic diseases is a reason that makes the diagnosis of the disease difficult. Although it is seen in some patients with iron deficiency (anemia), diabetes, and cancer, a cause cannot be found in ninety-five percent of those with the disease. The fact that the feeling of discomfort decreases with movement and increases during rest should be considered as a distinctive feature. These patients are very uncomfortable with long-term rest and travel. Patients' discomfort increases while watching TV, and they have difficulty falling asleep due to the feeling of restlessness in their legs when they lie down. They want to get out of bed and walk around.",
+    "span4": "Treatment",
+    "p3": "If you think you have Restless Leg Syndrome, consult a specialist physician. If the discomfort has developed in relation to a disease (such as anemia or diabetes), the treatment of this disease is applied first. Moving the legs, getting out of bed and walking around, or massage provide short-term relief. However, the application of these methods temporarily relieves the discomfort. In cases where the cause cannot be determined, a cure is sought for the disease with the drug treatment recommended by the specialist physician."
+  }
+}
