@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { dropdownMenu } from "@/constants";
 import { klinik, logo } from "@/public";
 import Image from "next/image";
@@ -8,9 +8,50 @@ import { Button } from "../ui/button";
 import { useTranslation } from "react-i18next";
 
 const ProductGroups = () => {
-  // State to keep track of the currently hovered menu item
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
   const [hoveredMenu, setHoveredMenu] = useState(null);
-  const { t }= useTranslation();
+  const { t } = useTranslation();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+  
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData), // Convert formData to JSON string
+      });
+  
+      const result = await response.json();
+  
+      if (response.ok) {
+        console.log(result.message);
+        // Optionally, show a success message to the user
+      } else {
+        console.error(result.error);
+        // Optionally, show an error message to the user
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Optionally, show an error message to the user
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
 
   return (
     <div className="w-full pb-16 mb-16">
@@ -64,21 +105,23 @@ const ProductGroups = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Contact Form Section */}
         <div
           className="mt-10 w-[90%] md:w-[350px] p-6 px-10 rounded-sm shadow-md z-10"
           style={{ backgroundImage: `url(${klinik.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <h2 className="text-2xl font-semibold text-center mb-6 text-white">{t('home:groups_contact')}</h2>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={(e) => handleSubmit(e)}>
             <div>
               <input
                 type="text"
                 id="fullname"
-                name="fullname"
+                name="fullName"
                 className="input-contact"
                 placeholder={t('home:groups_name')}
+                value={formData.fullName}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -88,6 +131,8 @@ const ProductGroups = () => {
                 name="phone"
                 className="input-contact"
                 placeholder={t('home:groups_phone')}
+                value={formData.phone}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -97,6 +142,8 @@ const ProductGroups = () => {
                 name="email"
                 className="input-contact"
                 placeholder={t('home:groups_email')}
+                value={formData.email}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -106,7 +153,9 @@ const ProductGroups = () => {
                 rows="4"
                 className="input-contact h-[100px]"
                 placeholder={t('home:groups_message')}
-              ></textarea>
+                value={formData.message}
+                onChange={handleChange}
+              />
             </div>
             <div className="flex justify-center">
               <Button

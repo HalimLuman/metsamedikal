@@ -15,7 +15,7 @@ const DropDown = ({ menu, title }) => {
           <h1>{title}</h1>
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 bg-[#fff] text-gray-800 text-xs rounded-none">
+      <DropdownMenuContent className="w-56 bg-[#585858] text-gray-300 text-xs rounded-none">
         {menu.map((item, index) => (
           <DropDownSub
             key={index}

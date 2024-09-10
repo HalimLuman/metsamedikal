@@ -80,14 +80,15 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="container flex justify-between items-center h-[80px]">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" className="flex flex-col">
           <Image
-            src={logo}
+            src={logo2}
             width={150}
             alt="logo"
             style={{ height: "auto", width: "150px" }}
             priority={true}
           />
+          <span className="text-[10px] text-[#068cd7] font-medium opacity-75 text-right italic mt-1">{t('slogan')}</span>
         </Link>
 
         {/* Desktop Links */}
@@ -108,11 +109,11 @@ const Navbar = () => {
                   <h1>{t('institutional')}</h1>
                 </div>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-50 rounded-none">
+              <DropdownMenuContent className="w-50 rounded-none bg-[#585858] text-white border-none p-1">
                 {dropdown1.map((item, index) => (
                   <Link href={`/${item.link}`} key={index} className="">
-                    <DropdownMenuItem className=" hover:bg-primary-blue hover:text-white rounded-none px-2 py-1">
-                      <span className="px-2 py-1 w-full cursor-pointer text-sm">
+                    <DropdownMenuItem className=" hover:bg-primary-blue  rounded-none px-2 py-1 outline-none">
+                      <span className="w-full cursor-pointer text-xs">
                       {t(`${item.title}`)}
                       </span>
                     </DropdownMenuItem>

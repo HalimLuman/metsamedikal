@@ -1,4 +1,5 @@
 {
+  "slogan": "Everything about your health",
   "contact": "Contact",
   "diseases": "Diseases",
   "home": "Home",
@@ -10,5 +11,7 @@
   "inst-p1": "Metsa Health was established on 09.09.2009 in Kayseri, one of the most important living centers of Türkiye, to ensure that patients can reach the best products under the right conditions. Our company, which has gained acceptance in a short time in commercial life without compromising its basic principles, has become the local official authorized dealer of many leading national and international companies in its sector. This situation has enabled the company and its employees to meet innovative products, thus providing the most accurate treatment and supportive products to patients.",
   "inst-p2": "The most important steps during the recovery from established diseases and problems are an effective diagnosis and treatment process. While we offer our patients first-class materials, blended with after-sales support, we provide this with our honest, reliable, hardworking, dynamic, customer-oriented, and smiling employees. This work brings us sustainable customer satisfaction and allows us to be a highly aware, effective, efficient, and productive company.",
   "inst-p3": "Together with the leading company dealerships in the sector, we work devotedly to provide the most efficient service by learning and renewing every day, prioritizing the virtues of honesty, diligence, and reliability. Our goal is to always provide the most innovative products with maximum benefit, deliver the most accurate products to our customers, and move forward with solid steps. Our company works in agreement with the Social Security Institution.",
-  "inst-p4": "Our customers can fully benefit from the support provided by the Social Security Institution for patients. You can contact us via the contact information to get more details about our products and brands."
+  "inst-p4": "Our customers can fully benefit from the support provided by the Social Security Institution for patients. You can contact us via the contact information to get more details about our products and brands.",
+  "results": "Search Results for ",
+  "not-found": "No products have found for the searched criteria."
 }

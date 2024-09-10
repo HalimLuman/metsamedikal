@@ -1,15 +1,17 @@
 {
-    "contact": "Kontaktoni",
-    "diseases": "Sëmundjet",
-    "home": "Shtëpi",
-    "institutional": "Institucionale",
-    "products": "Produktet",
-    "search": "Kërkoni për produktin...",
-    "dealerships": "Ekskluzivitetet",
-    "company-profile": "Profili i Kompanisë",
-      "inst-p1": "Metsa Health u themelua më 09.09.2009 në Kayseri, një nga qendrat më të rëndësishme të jetesës në Türkiye, për të siguruar që pacientët të kenë akses në produktet më të mira në kushtet e duhura. Kompania jonë, e cila fitoi pranim në një kohë të shkurtër në jetën tregtare pa kompromentuar parimet e saj themelore, është bërë shitësi i autorizuar lokal zyrtar i shumë kompanive kryesore kombëtare dhe ndërkombëtare në sektorin e saj. Kjo situatë i ka mundësuar kompanisë dhe punonjësve të saj të takohen me produkte inovative, duke ofruar kështu trajtimin dhe produktet mbështetëse më të sakta për pacientët.",
-      "inst-p2": "Hapat më të rëndësishëm gjatë shërimit nga sëmundjet dhe problemet e krijuara janë një proces efektiv i diagnostikimit dhe trajtimit. Ndërsa u ofrojmë pacientëve tanë materiale të klasit të parë, të përziera me mbështetje pas shitjes, ne e ofrojmë këtë me punonjësit tanë të ndershëm, të besueshëm, të palodhur, dinamikë, të orientuar drejt klientit dhe me buzëqeshje. Ky punë na sjell kënaqësi të qëndrueshme të klientëve dhe na lejon të jemi një kompani me ndërgjegjësim të lartë, efektive, efikase dhe produktive.",
-      "inst-p3": "Së bashku me partnerët kryesorë të kompanive në sektor, ne punojmë me përkushtim për të ofruar shërbimin më efikas duke mësuar dhe rinovuar çdo ditë, duke prioritizuar virtytet e ndershmërisë, punës së palodhur dhe besueshmërisë. Qëllimi ynë është gjithmonë të ofrojmë produktet më inovative me përfitim maksimal, të dorëzojmë produktet më të sakta për klientët tanë dhe të ecim përpara me hapa të sigurt. Kompania jonë punon në marrëveshje me Institutin e Sigurimeve Shoqërore.",
-      "inst-p4": "Klientët tanë mund të përfitojnë plotësisht nga mbështetja e ofruar nga Instituti i Sigurimeve Shoqërore për pacientët. Ju mund të na kontaktoni përmes informacionit të kontaktit për të marrë më shumë detaje rreth produkteve dhe markave tona."
-    
-  }
+  "slogan": "Gjithçka për shëndetin tuaj",
+  "contact": "Kontaktoni",
+  "diseases": "Sëmundjet",
+  "home": "Shtëpi",
+  "institutional": "Institucionale",
+  "products": "Produktet",
+  "search": "Kërkoni për produktin...",
+  "dealerships": "Ekskluzivitetet",
+  "company-profile": "Profili i Kompanisë",
+  "inst-p1": "Metsa Health u themelua më 09.09.2009 në Kayseri, një nga qendrat më të rëndësishme të jetesës në Türkiye, për të siguruar që pacientët të kenë akses në produktet më të mira në kushtet e duhura. Kompania jonë, e cila fitoi pranim në një kohë të shkurtër në jetën tregtare pa kompromentuar parimet e saj themelore, është bërë shitësi i autorizuar lokal zyrtar i shumë kompanive kryesore kombëtare dhe ndërkombëtare në sektorin e saj. Kjo situatë i ka mundësuar kompanisë dhe punonjësve të saj të takohen me produkte inovative, duke ofruar kështu trajtimin dhe produktet mbështetëse më të sakta për pacientët.",
+  "inst-p2": "Hapat më të rëndësishëm gjatë shërimit nga sëmundjet dhe problemet e krijuara janë një proces efektiv i diagnostikimit dhe trajtimit. Ndërsa u ofrojmë pacientëve tanë materiale të klasit të parë, të përziera me mbështetje pas shitjes, ne e ofrojmë këtë me punonjësit tanë të ndershëm, të besueshëm, të palodhur, dinamikë, të orientuar drejt klientit dhe me buzëqeshje. Ky punë na sjell kënaqësi të qëndrueshme të klientëve dhe na lejon të jemi një kompani me ndërgjegjësim të lartë, efektive, efikase dhe produktive.",
+  "inst-p3": "Së bashku me partnerët kryesorë të kompanive në sektor, ne punojmë me përkushtim për të ofruar shërbimin më efikas duke mësuar dhe rinovuar çdo ditë, duke prioritizuar virtytet e ndershmërisë, punës së palodhur dhe besueshmërisë. Qëllimi ynë është gjithmonë të ofrojmë produktet më inovative me përfitim maksimal, të dorëzojmë produktet më të sakta për klientët tanë dhe të ecim përpara me hapa të sigurt. Kompania jonë punon në marrëveshje me Institutin e Sigurimeve Shoqërore.",
+  "inst-p4": "Klientët tanë mund të përfitojnë plotësisht nga mbështetja e ofruar nga Instituti i Sigurimeve Shoqërore për pacientët. Ju mund të na kontaktoni përmes informacionit të kontaktit për të marrë më shumë detaje rreth produkteve dhe markave tona.",
+  "results": "Rezultatet e kërkimit për ",
+  "not-found": "Nuk u gjet asnjë produkt për kriteret e kërkuara."
+}

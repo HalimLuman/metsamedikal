@@ -27,7 +27,7 @@ const DropDownSub = ({ category, link, subCategory, title, link2 }) => {
       )}
 
       <DropdownMenuPortal>
-        <DropdownMenuSubContent className="bg-[#fff] text-gray-800 rounded-none border-none">
+        <DropdownMenuSubContent className="bg-[#585858] text-gray-300 rounded-none border-none">
           {subCategory.map((item, index) =>
             item.subcategory ? (
               <DropDownSub
@@ -47,7 +47,7 @@ const DropDownSub = ({ category, link, subCategory, title, link2 }) => {
                 }`}
                 key={index}
               >
-                <DropdownMenuItem className=" hover:bg-primary-blue hover:text-white rounded-none text-xs">
+                <DropdownMenuItem className=" hover:bg-primary-blue rounded-none text-xs">
                   <span className="w-full cursor-pointer text-xs">{t(item.category)}</span>
                 </DropdownMenuItem>
               </Link>

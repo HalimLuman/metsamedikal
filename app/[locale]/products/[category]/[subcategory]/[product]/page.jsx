@@ -21,7 +21,7 @@ const Page = () => {
 
     fetchProducts();
   }, []);
-  const [mainImage, setMainImage] = useState(philipsProduct);
+  const [mainImage, setMainImage] = useState(product.image);
   const [prevImage, setPrevImage] = useState(philipsProduct);
 
   const handleImageClick = (newImage) => {
@@ -41,11 +41,11 @@ const Page = () => {
   return (
     <div className="w-full flex flex-col md:flex-row gap-10">
       <div className="w-full md:w-2/3 flex flex-col gap-5">
-        <div className="w-full flex justify-center border rounded-lg bg-white p-5 shadow-md h-[250px] lg:h-[370px]">
-          <Image src={product.image} width={800} height={300} alt="Main product image" className="rounded-md" priority={true}/>
+        <div className="w-full flex justify-center border rounded-lg bg-white p-1 shadow-md h-[250px] lg:h-[400px]">
+          <Image src={product.image} width={400} height={400} alt="Main product image" className="rounded-md" priority={true}/>
         </div>
         <div className="flex gap-4">
-          {[maske2, maske1, philipsProduct].map((image, index) => (
+          {/* {[maske2, maske1, philipsProduct].map((image, index) => (
             <div
               key={index}
               className="flex justify-center border rounded-md bg-white p-2 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer"
@@ -55,7 +55,7 @@ const Page = () => {
             >
               <Image src={image} width={80} height={80} alt={`Additional product image ${index + 1}`} className="rounded-md" />
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
       <div className="flex flex-col w-full md:w-1/3 p-5 rounded-lg">

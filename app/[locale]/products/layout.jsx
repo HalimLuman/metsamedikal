@@ -19,7 +19,6 @@ const Layout = ({ children }) => {
   const category = params.category || ''; // Provide default empty string
   const subcategory = params.subcategory || ''; // Provide default empty string
   
-  console.log(t(`categories:${category}_${subcategory}`))
   return (
     <div className="py-10">
       <div className="w-[90%] mx-auto lg:container">
