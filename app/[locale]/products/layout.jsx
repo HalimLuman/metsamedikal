@@ -8,24 +8,24 @@ import { useTranslation } from "react-i18next";
 const Layout = ({ children }) => {
   const params = useParams();
   const { t } = useTranslation();
-
   const formatHeader = (slug) => {
     if (!slug) return ''; // Return an empty string if slug is undefined
     return slug
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
   };
-
+  
   const category = params.category || ''; // Provide default empty string
   const subcategory = params.subcategory || ''; // Provide default empty string
-
+  
+  console.log(t(`categories:${category}_${subcategory}`))
   return (
     <div className="py-10">
       <div className="w-[90%] mx-auto lg:container">
         {/* Header Section */}
-        <div className="bg-[#f6f6f6] p-4 py-3 shadow-sm rounded border border-gray-200">
-          <div className="container mx-auto flex items-center">
+        <div className="bg-[#f6f6f6] lg:p-4 py-3 shadow-sm rounded border border-gray-200">
+          <div className=" w-[90%] mx-auto flex max-lg:justify-between items-center">
             <Link
               href="/"
               className="text-primary-blue font-semibold hover:text-blue-500"
@@ -36,12 +36,12 @@ const Layout = ({ children }) => {
             {category ? (
               <Link
                 href={`/products/${category}`}
-                className="text-primary-blue font-semibold hover:text-blue-500"
+                className="text-primary-blue font-semibold hover:text-blue-500 text-sm lg:text-base text-center"
               >
                 {formatHeader(t(`categories:${category}`))}
               </Link>
             ) : (
-              <span className="text-gray-800 font-semibold">
+              <span className="text-gray-800 font-semibold text-sm lg:text-base text-center">
                 {formatHeader(category)}
               </span>
             )}
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
               <>
                 <span className="mx-4 text-gray-700">/</span>
 
-                <span className="text-gray-800 font-semibold">
+                <span className="text-gray-800 font-semibold text-sm lg:text-base">
                 {formatHeader(t(`categories:${category}_${subcategory}`))}
                 </span>
               </>

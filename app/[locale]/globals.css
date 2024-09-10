@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -70,7 +69,7 @@
     @apply max-w-[1200px]
   }
   .nav-link{
-    @apply hover:bg-primary-blue/10 rounded-lg px-3 py-2 text-base font-semibold text-black/80 tracking-wider
+    @apply hover:bg-primary-blue/10 rounded-lg px-3 py-2 text-sm text-black/80 tracking-wider
   }
   .social-link{
     @apply text-2xl hover:text-primary-blue
@@ -78,6 +77,31 @@
   .input-contact{
     @apply h-[45px] block w-full px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm
   }
-  /* Ensure other elements have lower z-index */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Style for the carousel container */
+  .carousel {
+    overflow: hidden;
+  }
+  
+  /* Style for the track of carousel items */
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    animation: slide 10s linear infinite;
+  }
+  
+  /* Style for individual carousel slides */
+  .carousel-slide {
+    flex: 0 0 auto;
+    width: 25%;
+  }
 
 }

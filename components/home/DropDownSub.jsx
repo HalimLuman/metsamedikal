@@ -13,21 +13,21 @@ const DropDownSub = ({ category, link, subCategory, title, link2 }) => {
   const { t } = useTranslation();
 
   return (
-    <DropdownMenuSub>
+    <DropdownMenuSub className="bg-[#585858]">
       {title === t('products') ? (
         <Link href={`/products/${link}`}>
-          <DropdownMenuSubTrigger>
-            <span className="w-full cursor-pointer">{t(category)}</span>
+          <DropdownMenuSubTrigger className="rounded-none hover:text-white">
+            <span className="w-full cursor-pointer text-xs">{t(category)}</span>
           </DropdownMenuSubTrigger>
         </Link>
-      ) : (
-        <DropdownMenuSubTrigger>
-          <span className="w-full cursor-pointer">{t(category)}</span>
+      ) : ( 
+        <DropdownMenuSubTrigger className="rounded-none hover:text-white">
+          <span className="w-full cursor-pointer text-xs">{t(category)}</span>
         </DropdownMenuSubTrigger>
       )}
 
       <DropdownMenuPortal>
-        <DropdownMenuSubContent>
+        <DropdownMenuSubContent className="bg-[#fff] text-gray-800 rounded-none border-none">
           {subCategory.map((item, index) =>
             item.subcategory ? (
               <DropDownSub
@@ -47,8 +47,8 @@ const DropDownSub = ({ category, link, subCategory, title, link2 }) => {
                 }`}
                 key={index}
               >
-                <DropdownMenuItem className="py-2">
-                  <span className="w-full cursor-pointer">{t(item.category)}</span>
+                <DropdownMenuItem className=" hover:bg-primary-blue hover:text-white rounded-none text-xs">
+                  <span className="w-full cursor-pointer text-xs">{t(item.category)}</span>
                 </DropdownMenuItem>
               </Link>
             )

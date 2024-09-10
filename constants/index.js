@@ -54,8 +54,7 @@ export const dropdownMenu = [
         link: "oxygen-concentrator",
       },
       {
-        category:
-          "categories:respiratory-equipment_portable_oxygen-concentrator",
+        category:"categories:respiratory-equipment_portable-oxygen-concentrator",
         link: "portable-oxygen-concentrator",
       },
       {
@@ -95,7 +94,7 @@ export const dropdownMenu = [
         link: "tracheostomy-cannula",
       },
       {
-        category: "categories:respiratory-equipment_cough-assist-device",
+        category: "categories:respiratory-equipment_cough-assist-devices",
         link: "cough-assist-devices",
       },
       {
@@ -111,8 +110,8 @@ export const dropdownMenu = [
         link: "chamber",
       },
       {
-        category: "categories:respiratory-equipment_pep&imt",
-        link: "pep&imt",
+        category: "categories:respiratory-equipment_pep-imt",
+        link: "pep-imt",
       },
       {
         category: "categories:respiratory-equipment_triflo",
@@ -142,11 +141,11 @@ export const dropdownMenu = [
     link: "respiratory-devices-masks",
     subcategory: [
       {
-        category: "categories:respiratory-masks_nasal-mask",
+        category: "categories:respiratory-devices-masks_nasal-mask",
         link: "nasal-mask",
       },
       {
-        category: "categories:respiratory-masks_oral-nasal-mask",
+        category: "categories:respiratory-devices-masks_oral-nasal-mask",
         link: "oral-nasal-mask",
       },
     ],

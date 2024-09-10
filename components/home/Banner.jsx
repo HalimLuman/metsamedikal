@@ -11,10 +11,10 @@ const CategoryItem = ({ title, subtitle, imageSrc }) => (
       <p className="text-gray-400 text-sm font-medium">{subtitle}</p>
     </div>
     <div className="hidden sm:flex items-center px-4 bg-[#c4c4c4] h-full">
-      <Image src={arrow} alt="Arrow" width={15} height={15} />
+      <Image src={arrow} alt="Arrow" width={15} height={15}/>
     </div>
     <div className="relative">
-      <Image src={imageSrc} alt="Category" width={319} objectFit="contain" />
+      <Image src={imageSrc} alt="Category" width={319} className="object-contain" />
     </div>
   </div>
 );
@@ -38,14 +38,14 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="w-full py-5 bg-[#f6f6f6] relative z-[1]">
+    <section className="w-full py-5 bg-[#f6f6f6]">
       <div className="container flex justify-center mx-auto">
-        <div className="relative w-[450px] h-[350px] 2xl:w-[500px] 2xl:h-[400px] left-[140px] 2xl:left-[200px] top-[20px] overflow-hidden hidden lg:flex">
+        <div className=" overflow-hidden hidden lg:flex">
           <div
-            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${fade ? "opacity-100" : "opacity-0"}`}
+            className={`inset-0 transition-opacity duration-500 ease-in-out ${fade ? "opacity-100" : "opacity-0"}`}
             key={currentImageIndex}
           >
-            <Image src={images[currentImageIndex]} alt="Person" fill objectFit="cover" />
+            <Image src={images[currentImageIndex]} alt="Person" className="object-cover w-[400px] h-[300px] xl:w-[450px] xl:h-[350px] 2xl:w-[500px] 2xl:h-[400px]" />
           </div>
         </div>
         <div className="w-[330px] self-center bg-primary-blue justify-center py-5 hidden lg:flex">

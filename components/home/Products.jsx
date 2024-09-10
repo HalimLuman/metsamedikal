@@ -29,7 +29,7 @@ const Products = () => {
           </div>
 
           {/* Carousel */}
-          <div className="relative w-[90%] 2xl:w-[60%] bg-[#f6f6f6] p-6 py-0 pb-12 rounded-xl">
+          <div className=" w-[90%] 2xl:w-[60%] bg-[#f6f6f6] p-6 py-0 pb-12 rounded-xl">
             <Carousel
               opts={{
                 align: "start",
@@ -46,7 +46,7 @@ const Products = () => {
                 {products.map((product, index) => (
                   <CarouselItem
                     key={index}
-                    className="basis-full sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 flex flex-col items-center p-4 rounded-lg transition-shadow duration-300"
+                    className="basis-full relative z-10 sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 flex flex-col items-center p-4 rounded-lg transition-shadow duration-300"
                   >
                     <div className="flex items-center justify-center h-[200px] w-full mb-4 overflow-hidden rounded-md border border-gray-200">
                       <Image

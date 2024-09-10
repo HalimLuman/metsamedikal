@@ -8,14 +8,14 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const DropDown = ({ menu, title }) => {
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger>
         <div className="flex items-center nav-link gap-1">
           <MdKeyboardArrowDown className="text-lg" />
           <h1>{title}</h1>
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 bg-[#fff] text-gray-800 text-xs rounded-none">
         {menu.map((item, index) => (
           <DropDownSub
             key={index}

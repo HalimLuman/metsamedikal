@@ -32,11 +32,11 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between text-white md:space-y-0 px-6">
           {/* Contact Information - Visible only on larger screens */}
           <div className="items-center flex space-x-8">
-            <div className="flex items-center space-x-2">
+            <div className="hidden lg:flex items-center space-x-2">
               <CiPhone className="text-xl" />
               <span className="text-sm font-light">0352 222 07 30</span>
             </div>
-            <div className="w-[1px] h-6 bg-white/40" />
+            <div className="hidden lg:flex w-[1px] h-6 bg-white/40" />
             <div className="hidden lg:flex items-center space-x-2">
               <CiMail className="text-xl" />
               <span className="text-sm font-light">metsasaglik@gmail.com</span>
@@ -51,8 +51,10 @@ const Navbar = () => {
           </div>
 
           {/* Social Media and Language Selector */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 max-lg:w-full max-lg:justify-between">
             {/* Social Media Links */}
+            <div className="flex gap-4">
+
             <Link
               href="/"
               className="text-white hover:text-gray-200 transition duration-200"
@@ -66,6 +68,7 @@ const Navbar = () => {
               <CiFacebook className="text-2xl" />
             </Link>
 
+            </div>
             {/* Language Selector */}
             <div className="relative">
               <LanguageChanger />
@@ -83,16 +86,19 @@ const Navbar = () => {
             width={150}
             alt="logo"
             style={{ height: "auto", width: "150px" }}
+            priority={true}
           />
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-5">
+        <div className="hidden lg:flex items-center gap-2 xl:gap-5">
           <Link href="/" className="nav-link">
             {t('home')}
           </Link>
-          <div className="flex items-center gap-1 cursor-pointer">
+          <div className="flex items-center gap-1">
             <DropDown menu={dropdownMenu} title={t('products')} />
+
+
           </div>
           <div className="flex items-center gap-1 cursor-pointer">
             <DropdownMenu>
@@ -102,10 +108,10 @@ const Navbar = () => {
                   <h1>{t('institutional')}</h1>
                 </div>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
+              <DropdownMenuContent className="w-50 rounded-none">
                 {dropdown1.map((item, index) => (
                   <Link href={`/${item.link}`} key={index} className="">
-                    <DropdownMenuItem className=" hover:bg-primary-blue/20 rounded-md px-2 py-1">
+                    <DropdownMenuItem className=" hover:bg-primary-blue hover:text-white rounded-none px-2 py-1">
                       <span className="px-2 py-1 w-full cursor-pointer text-sm">
                       {t(`${item.title}`)}
                       </span>

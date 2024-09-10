@@ -50,14 +50,14 @@ const MobileNav = () => {
           </Link>
 
           <div className="pt-10">
-            <nav className="flex flex-col gap-3">
+            <nav className="flex flex-col gap-6">
               {/* Product Groups */}
               <div className="flex flex-col w-full border-b pb-2">
                 <div
                   className="flex justify-between items-center cursor-pointer"
                   onClick={toggleProductGroups}
                 >
-                  <p className="text-black">{t("products")}</p>
+                  <p className="text-black font-semibold">{t("products")}</p>
                   <MdKeyboardArrowDown
                     className={`text-lg text-black transition-transform ${
                       openProductGroups ? "rotate-180" : ""
@@ -125,7 +125,7 @@ const MobileNav = () => {
                   className="flex justify-between items-center cursor-pointer"
                   onClick={toggleDropdown1}
                 >
-                  <p className="text-black">{t("institutional")}</p>
+                  <p className="text-black font-semibold">{t("institutional")}</p>
                   <MdKeyboardArrowDown
                     className={`text-lg text-black transition-transform ${
                       openDropdown1 ? "rotate-180" : ""
@@ -155,7 +155,7 @@ const MobileNav = () => {
                   className="flex justify-between items-center cursor-pointer"
                   onClick={toggleDropdown2}
                 >
-                  <p className="text-black">{t("dealerships")}</p>
+                  <p className="text-black font-semibold">{t("diseases")}</p>
                   <MdKeyboardArrowDown
                     className={`text-lg text-black transition-transform ${
                       openDropdown2 ? "rotate-180" : ""
@@ -229,7 +229,7 @@ const MobileNav = () => {
                                             className="w-full py-1"
                                           >
                                             <Link
-                                              href={`/products/${item.link}/${sub.link}/${nestedSub.link}`}
+                                              href={`/diseases/${item.link}/${sub.link}/${nestedSub.link}`}
                                               className="text-gray-500 hover:text-primary-blue"
                                             >
                                               {t(`${nestedSub.category}`)}
