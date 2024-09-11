@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className="w-full flex flex-col drop-shadow bg-white">
       {/* Top Bar */}
-      <div className="bg-primary-blue w-full py-3">
+      <div className="bg-primary-blue w-full py-1">
         <div className="container mx-auto flex items-center justify-between text-white md:space-y-0 px-6">
           {/* Contact Information - Visible only on larger screens */}
           <div className="items-center flex space-x-8">

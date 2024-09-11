@@ -12,6 +12,7 @@ const Page = () => {
   return (
     <div className="w-full">
       <div className="max-w-7xl mx-auto px-4">
+      <h1 className="text-xl font-semibold mb-4 pb-2 border-b">{t('products')}</h1>
         {selectedMenu ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {selectedMenu.subcategory.map((sub, index) => (

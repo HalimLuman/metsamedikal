@@ -16,10 +16,14 @@ const SearchResultsPage = () => {
       if (query) {
         try {
           const result = await getProductsByName(query);
-          setProducts(result); // Store the products in state
+          // Ensure result is an array
+          setProducts(Array.isArray(result) ? result : []);
         } catch (error) {
-          console.error(error);
+          console.error("Failed to fetch products:", error);
+          setProducts([]); // Reset to an empty array in case of error
         }
+      } else {
+        setProducts([]); // Clear products if there's no query
       }
     };
 
@@ -33,9 +37,9 @@ const SearchResultsPage = () => {
       </h1>
       {products.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
+          {products.map((product) => (
             <ProductItem
-              key={index}
+              key={product.$id} // Use a unique key like product.$id
               id={product.$id}
               name={product.productName}
               description={product.productDescription}

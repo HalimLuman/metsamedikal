@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
     <div className="py-10">
       <div className="w-[90%] mx-auto lg:container">
         {/* Header Section */}
-        <div className="bg-[#f6f6f6] lg:p-4 py-3 shadow-sm rounded border border-gray-200">
-          <div className=" w-[90%] mx-auto flex max-lg:justify-between items-center">
+        <div className="bg-[#f6f6f6] lg:p-4 py-3 shadow-sm rounded border border-gray-200 max-md:hidden">
+          <div className=" w-[90%] mx-auto flex max-md:justify-between items-center">
             <Link
               href="/"
               className="text-primary-blue font-semibold hover:text-blue-500"
@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
           )}
 
           {/* Main Content Section */}
-          <div className={`w-full ${params.product || !params.product? 'lg:w-full' : 'lg:w-3/4'} lg:p-4`}>
+          <div className={`w-full ${params.product || !params.product? 'lg:w-full' : 'lg:w-3/4'} lg:px-4`}>
             <div className="w-full">
               {/* Add product cards or content here */}
               {children}
