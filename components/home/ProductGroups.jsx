@@ -15,36 +15,14 @@ const ProductGroups = () => {
     message: ''
   });
   const [hoveredMenu, setHoveredMenu] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
   const { t } = useTranslation();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-  
-    try {
-      const response = await fetch('/api/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData), // Convert formData to JSON string
-      });
-  
-      const result = await response.json();
-  
-      if (response.ok) {
-        console.log(result.message);
-        // Optionally, show a success message to the user
-      } else {
-        console.error(result.error);
-        // Optionally, show an error message to the user
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      // Optionally, show an error message to the user
-    }
+    console.log(formData)
   };
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -57,11 +35,9 @@ const ProductGroups = () => {
     <div className="w-full pb-16 mb-16">
       <div className="container mx-auto flex flex-col w-full items-center md:flex-row justify-center gap-10">
         <div className="flex gap-5 md:self-end max-md:w-[90%]">
-          {/* Section for displaying the image based on hovered menu */}
           <div className="flex-col items-center justify-center w-[300px] hidden lg:flex">
             <div className="w-[200px] h-[200px] flex items-center justify-center rounded-full overflow-hidden border-2 border-sky-400">
               {hoveredMenu ? (
-                // Display the image of the hovered menu
                 <Image
                   src={hoveredMenu.img}
                   alt={hoveredMenu.category}
@@ -70,7 +46,6 @@ const ProductGroups = () => {
                   objectFit="contain"
                 />
               ) : (
-                // Default or placeholder image when no menu item is hovered
                 <Image
                   src={logo}
                   alt="Default logo"
@@ -80,15 +55,13 @@ const ProductGroups = () => {
                 />
               )}
             </div>
-            {/* Optional: display the category name if hovered */}
-            <p className="mt-4">{hoveredMenu ? hoveredMenu.category : ""}</p>
+            <p className="mt-4">{hoveredMenu ? t(`${hoveredMenu.category}`) : ""}</p>
           </div>
 
           <div className="flex flex-col md:items-end max-md:w-full">
             <h2 className="font-semibold text-xl mb-5">{t('home:groups_header')}</h2>
             <div className="flex max-md:w-full">
               <div className="flex flex-col md:items-end py-2 max-md:w-full">
-                {/* Loop through dropdownMenu and create links */}
                 {dropdownMenu.map((menu, index) => (
                   <Link
                     key={index}
@@ -106,14 +79,14 @@ const ProductGroups = () => {
           </div>
         </div>
 
-        {/* Contact Form Section */}
         <div
           className="mt-10 w-[90%] md:w-[350px] p-6 px-10 rounded-sm shadow-md z-10"
           style={{ backgroundImage: `url(${klinik.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <h2 className="text-2xl font-semibold text-center mb-6 text-white">{t('home:groups_contact')}</h2>
-          <form className="space-y-4" onSubmit={(e) => handleSubmit(e)}>
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
+              <label htmlFor="fullname" className="sr-only">{t('home:groups_name')}</label>
               <input
                 type="text"
                 id="fullname"
@@ -125,6 +98,7 @@ const ProductGroups = () => {
               />
             </div>
             <div>
+              <label htmlFor="phone" className="sr-only">{t('home:groups_phone')}</label>
               <input
                 type="tel"
                 id="phone"
@@ -136,6 +110,7 @@ const ProductGroups = () => {
               />
             </div>
             <div>
+              <label htmlFor="email" className="sr-only">{t('home:groups_email')}</label>
               <input
                 type="email"
                 id="email"
@@ -147,6 +122,7 @@ const ProductGroups = () => {
               />
             </div>
             <div>
+              <label htmlFor="message" className="sr-only">{t('home:groups_message')}</label>
               <textarea
                 id="message"
                 name="message"
@@ -157,12 +133,18 @@ const ProductGroups = () => {
                 onChange={handleChange}
               />
             </div>
+            {submitStatus && (
+              <div className="text-center text-red-500">
+                {submitStatus}
+              </div>
+            )}
             <div className="flex justify-center">
               <Button
                 type="submit"
                 className="w-full bg-gradient-to-r from-blue-700 to-sky-400"
+                disabled={isSubmitting}
               >
-                {t('home:groups_submit')}
+                {isSubmitting ? 'Submitting...' : t('home:groups_submit')}
               </Button>
             </div>
           </form>

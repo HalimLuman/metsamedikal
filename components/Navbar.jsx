@@ -125,7 +125,7 @@ const Navbar = () => {
           <div className="flex items-center gap-1 cursor-pointer">
             <DropDown menu={dropdown2} title={t('diseases')} />
           </div>
-          <Link href="/" className="nav-link">
+          <Link href="/contact" className="nav-link">
           {t('contact')}
           </Link>
         </div>
