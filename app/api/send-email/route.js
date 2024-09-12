@@ -19,7 +19,7 @@ export async function POST(req) {
     // Email content
     const mailOptions = {
       from: `Metsamedikal MK <${process.env.NEXT_PUBLIC_LUMANHALIM_EMAIL}>`, // Masked sender address
-      to: 'lumanhalim2004@gmail.com', // Your customer's email address
+      to: 'edizluman728@gmail.com', // Your customer's email address
       subject: `${subject ? `${subject}` : `Metsamedikal MK contact: ${fullName}`}`,
       html: `
                 <div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
