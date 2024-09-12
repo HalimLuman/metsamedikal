@@ -1,1 +1,19 @@
-{"banner_devices":"Pajisjet","banner_lymphedema":"Limfedema","banner_medical":"Produkte Mjekësore","banner_orthopedic":"Ortopedike","banner_products":"Produktet","banner_respiratory":"Respiratore","carousel_brand":"Markat","carousel_detail":"Shiko Detajet","carousel_header":"Produktet e veçuara","groups_contact":"Na kontaktoni","groups_email":"Shkruani emailin tuaj","groups_header":"Grupet e produkteve","groups_message":"Shkruani mesazhin tuaj","groups_name":"Shkruani emrin tuaj të plotë","groups_phone":"Futni numrin tuaj të telefonit","groups_submit":"Dërgo Mesazh"}
+{
+  "banner_devices": "Pajisjet",
+  "banner_lymphedema": "Limfedema",
+  "banner_medical": "Produkte Mjekësore",
+  "banner_orthopedic": "Ortopedike",
+  "banner_products": "Produktet",
+  "banner_respiratory": "Respiratore",
+  "carousel_brand": "Markat",
+  "carousel_detail": "Shiko Detajet",
+  "carousel_header": "Produktet e veçuara",
+  "groups_contact": "Na kontaktoni",
+  "groups_email": "Shkruani emailin tuaj",
+  "groups_header": "Grupet e produkteve",
+  "groups_message": "Shkruani mesazhin tuaj",
+  "groups_name": "Shkruani emrin tuaj të plotë",
+  "groups_phone": "Futni numrin tuaj të telefonit",
+  "groups_submit": "Dërgo Mesazh",
+    "groups_subject": "Subjekt"
+}

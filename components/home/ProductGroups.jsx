@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { dropdownMenu } from "@/constants";
 import { klinik, logo } from "@/public";
 import Image from "next/image";
@@ -9,25 +9,57 @@ import { useTranslation } from "react-i18next";
 
 const ProductGroups = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    message: ''
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [hoveredMenu, setHoveredMenu] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState('');
+  const [submitStatus, setSubmitStatus] = useState("");
   const { t } = useTranslation();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
+    setIsSubmitting(true); // Update submission status
+    setSubmitStatus(""); // Clear previous status
+    // Basic validation
+    if (
+      !formData.fullName ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.message
+    ) {
+      setSubmitStatus("Please fill out all required fields.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("Email sent successfully!");
+      } else {
+        setSubmitStatus("Error sending email.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setSubmitStatus("Error sending email.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -55,11 +87,15 @@ const ProductGroups = () => {
                 />
               )}
             </div>
-            <p className="mt-4">{hoveredMenu ? t(`${hoveredMenu.category}`) : ""}</p>
+            <p className="mt-4">
+              {hoveredMenu ? t(`${hoveredMenu.category}`) : ""}
+            </p>
           </div>
 
           <div className="flex flex-col md:items-end max-md:w-full">
-            <h2 className="font-semibold text-xl mb-5">{t('home:groups_header')}</h2>
+            <h2 className="font-semibold text-xl mb-5">
+              {t("home:groups_header")}
+            </h2>
             <div className="flex max-md:w-full">
               <div className="flex flex-col md:items-end py-2 max-md:w-full">
                 {dropdownMenu.map((menu, index) => (
@@ -81,62 +117,74 @@ const ProductGroups = () => {
 
         <div
           className="mt-10 w-[90%] md:w-[350px] p-6 px-10 rounded-sm shadow-md z-10"
-          style={{ backgroundImage: `url(${klinik.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          style={{
+            backgroundImage: `url(${klinik.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <h2 className="text-2xl font-semibold text-center mb-6 text-white">{t('home:groups_contact')}</h2>
+          <h2 className="text-2xl font-semibold text-center mb-6 text-white">
+            {t("home:groups_contact")}
+          </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="fullname" className="sr-only">{t('home:groups_name')}</label>
+              <label htmlFor="fullname" className="sr-only">
+                {t("home:groups_name")}
+              </label>
               <input
                 type="text"
                 id="fullname"
                 name="fullName"
                 className="input-contact"
-                placeholder={t('home:groups_name')}
+                placeholder={t("home:groups_name")}
                 value={formData.fullName}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="phone" className="sr-only">{t('home:groups_phone')}</label>
+              <label htmlFor="phone" className="sr-only">
+                {t("home:groups_phone")}
+              </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 className="input-contact"
-                placeholder={t('home:groups_phone')}
+                placeholder={t("home:groups_phone")}
                 value={formData.phone}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="email" className="sr-only">{t('home:groups_email')}</label>
+              <label htmlFor="email" className="sr-only">
+                {t("home:groups_email")}
+              </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 className="input-contact"
-                placeholder={t('home:groups_email')}
+                placeholder={t("home:groups_email")}
                 value={formData.email}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="message" className="sr-only">{t('home:groups_message')}</label>
+              <label htmlFor="message" className="sr-only">
+                {t("home:groups_message")}
+              </label>
               <textarea
                 id="message"
                 name="message"
                 rows="4"
                 className="input-contact h-[100px]"
-                placeholder={t('home:groups_message')}
+                placeholder={t("home:groups_message")}
                 value={formData.message}
                 onChange={handleChange}
               />
             </div>
             {submitStatus && (
-              <div className="text-center text-red-500">
-                {submitStatus}
-              </div>
+              <div className="text-center text-red-500">{submitStatus}</div>
             )}
             <div className="flex justify-center">
               <Button
@@ -144,7 +192,7 @@ const ProductGroups = () => {
                 className="w-full bg-gradient-to-r from-blue-700 to-sky-400"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Submitting...' : t('home:groups_submit')}
+                {isSubmitting ? "Submitting..." : t("home:groups_submit")}
               </Button>
             </div>
           </form>

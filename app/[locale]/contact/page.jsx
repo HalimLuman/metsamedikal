@@ -3,6 +3,7 @@ import Map from "@/components/Map";
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 
 const page = () => {
   const { t } = useTranslation();
@@ -11,14 +12,41 @@ const page = () => {
     email: "",
     phone: "",
     message: "",
+    subject: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    setIsSubmitting(true); // Update submission status
+    setSubmitStatus(""); // Clear previous status
+ // Basic validation
+    if (!formData.fullName || !formData.email || !formData.subject || !formData.message || !formData.message) {
+      setSubmitStatus("Please fill out all required fields.");
+      setIsSubmitting(false);
+      return;
+    }
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("Email sent successfully!");
+      } else {
+        setSubmitStatus("Error sending email.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setSubmitStatus("Error sending email.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -41,10 +69,23 @@ const page = () => {
                 </label>
                 <input
                   type="text"
-                  id="fullname"
+                  id="fullName"
                   name="fullName"
                   className="input-contact"
                   value={formData.fullName}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label htmlFor="subject" className="text-sm">
+                  {t("home:groups_subject")}
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="input-contact"
+                  value={formData.subject}
                   onChange={handleChange}
                 />
               </div>
@@ -88,7 +129,7 @@ const page = () => {
                 />
               </div>
               {submitStatus && (
-                <div className="text-center text-red-500">{submitStatus}</div>
+                <div className="text-center text-blue-500">{submitStatus}</div>
               )}
               <div className="flex justify-center">
                 <Button
@@ -102,7 +143,26 @@ const page = () => {
             </form>
           </div>
           <div className="w-full md:w-1/2">
-            <h2>Address</h2>
+            <h2 className="font-semibold text-lg">ADDRESS</h2>
+            <p className="my-2 text-xs">Metsamedical</p>
+            <div className="flex flex-col gap-2 border-b border-t py-6 mt-5">
+              <div className="flex items-center space-x-2">
+                <CiPhone className="text-xl" />
+                <span className="text-sm font-light">0352 222 07 30</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CiMail className="text-xl" />
+                <span className="text-sm font-light">
+                  metsasaglik@gmail.com
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CiLocationOn className="text-xl" />
+                <span className="text-sm font-light">
+                  Atatürk Bulvarı Hastane Caddesi NO:71/A Kocasinan/Kayseri
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
